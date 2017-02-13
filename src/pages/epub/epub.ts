@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, PopoverController } from 'ionic-angular';
+import { CatalogPopoverComponent } from './../../components/catalog-popover/catalog-popover'
 import * as ePub from 'epubjs/build/epub';
 /*
   Generated class for the EBook page.
@@ -30,7 +31,8 @@ export class EPubPage {
   }
   constructor(
     public navCtrl: NavController,
-    public navParams: NavParams
+    public navParams: NavParams,
+    public popoverCtrl: PopoverController
   ) {
     this.book = navParams.data.book;
     //this.epubOption.width = 1024;
@@ -56,56 +58,21 @@ export class EPubPage {
       console.info("EPUB: ", this.epub);
     });
 
-    this.epub.generatePagination().then((pageList) => {
-      // console.log("Pagination:");
-      // console.log(pageList);
-      // this.totalPages = pageList.length;
-      //this.totalPages = this.epub.pagination.totalPages;
-    });
+    // this.epub.generatePagination().then((pageList) => {
+    //   // console.log("Pagination:");
+    //   // console.log(pageList);
+    //   // this.totalPages = pageList.length;
+    //   //this.totalPages = this.epub.pagination.totalPages;
+    // });
     this.epub.on('book:ready', () => {
       console.info("EPUB: ", this.epub);
     });
-    this.epub.on('book:pageChanged', (location) => {
-      //这个事件会被触发2次，是Epub.js的问题.......
-      console.log("PAGE CHANGED TO LOCATION: ", location);
-      console.log("CURRENT PAGE NO: ", this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi()));
-      // if (this.currentPage != this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())) {
-      this.currentPage = this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi());
-      // }
-    });
+    // this.epub.on('book:pageChanged', (location) => {
+    //   //这个事件会被触发2次，是Epub.js的问题.......
+    //   console.log("PAGE CHANGED TO LOCATION: ", location);
+    //   console.log("CURRENT PAGE NO: ", this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi()));
+    // });
 
-    // this.book.setStyle("font-size", "1em");
-    // this.book.setStyle("background-color", "0");
-    // this.book.setStyle("color", "ffffff");
-    //键盘监听
-    // ePub.Hooks.register("beforeChapterDisplay").pageTurns = function (callback, renderer) {
-    //   var lock = false;
-    //   var arrowKeys = function (e) {
-    //     e.preventDefault();
-    //     if (lock) return;
-
-    //     if (e.keyCode == 37) {
-    //       this.epub.prevPage();
-    //       lock = true;
-    //       setTimeout(function () {
-    //         lock = false;
-    //       }, 100);
-    //       return false;
-    //     }
-
-    //     if (e.keyCode == 39) {
-    //       this.epub.nextPage();
-    //       lock = true;
-    //       setTimeout(function () {
-    //         lock = false;
-    //       }, 100);
-    //       return false;
-    //     }
-
-    //   };
-    //   renderer.doc.addEventListener('keydown', arrowKeys, false);
-    //   if (callback) callback();
-    // }
   }
 
   ionViewWillUnload() {
@@ -113,12 +80,27 @@ export class EPubPage {
   }
   // //显示目录
   showCatalog(event) {
-    console.log(this.epub);
-    //console.log(this.currentPage);
+    let popover = this.popoverCtrl.create(CatalogPopoverComponent, this.toc);
+    //关闭后的处理
+    popover.onDidDismiss(chapter => {
+      if (chapter != null) {
+        console.log("target CFI: " + JSON.stringify(chapter));
+        this.epub.displayChapter(chapter.href);
+      }
+    });
+    popover.present({ ev: event });
   }
-  // //翻页
-  // navPage(event) {
-  //   console.log(event);
-  //   this.epub.nextPage();
-  // }
+  nav(event) {
+    console.log("nav Event: " + JSON.stringify(event));
+  }
+  nextPage(){
+    this.currentPage++;
+    console.log(this.currentPage);
+    this.epub.gotoPage(this.currentPage);
+  }
+   prevPage(){
+    this.currentPage--;
+    console.log(this.currentPage);
+    this.epub.gotoPage(this.currentPage);
+  }
 }

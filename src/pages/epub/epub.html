@@ -12,16 +12,18 @@
 <ion-footer>
   <ion-toolbar>
     <ion-buttons start>
-      <button ion-button><ion-icon name="arrow-up"></ion-icon></button>
+      <button ion-button (click)="prevPage()"><ion-icon name="arrow-back"></ion-icon></button>
     </ion-buttons>
-    <!--<ion-range center class="pageRange" [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())" (ionChange)="this.epub.gotoPage(1)"
+    <!--<ion-range center class="pageRange" [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())" (ionChange)="nav(event)"
       pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
-      </ion-range>-->
-      <ion-buttons end>
-        <button ion-button (click)="this.epub.prevPage()"><ion-icon name="arrow-back"></ion-icon></button>
-        <ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
-        <pre>{{this.currentPage}} {{this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())}} / {{this.epub.pagination.totalPages+1}} </pre>
-        <button ion-button (click)="this.epub.nextPage()"><ion-icon name="arrow-forward"></ion-icon></button>
-      </ion-buttons>
+    </ion-range>-->
+    <ion-range center class="pageRange" [(ngModel)]="this.currentPage" (ionChange)="this.epub.gotoPage(this.currentPage)"
+      pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
+    </ion-range>
+    <ion-buttons end>
+      <!--<ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
+        <pre>{{this.currentPage}} {{this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())}} / {{this.epub.pagination.totalPages+1}} </pre>-->
+      <button ion-button (click)="nextPage()"><ion-icon name="arrow-forward"></ion-icon></button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-footer>

@@ -1,0 +1,5 @@
+<ion-list inset no-border>
+  <ion-item  (click)="openItem(item)" *ngFor="let item of this.toc">
+    <pre>{{item.label}}</pre>
+  </ion-item>
+</ion-list>
