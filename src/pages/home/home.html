@@ -1,0 +1,15 @@
+<ion-content fullscreen>
+  <div class="container">
+    <ion-list no-lines class="book-list">
+      <button class="book-item" (click)="openItem(item)" *ngFor="let item of this.shelf[this.languageIndex].books">
+          <img class="book-coverImage" src="{{item.coverImageURL}}" *ngIf="item.coverImageURL!=''" />
+          <pre class="book-name">{{item.name}}</pre>
+      </button>
+    </ion-list>
+    <ion-range mode="ios" class="languageRange" [(ngModel)]="languageIndex" snaps="true" min="0" max="7" step="1">
+    </ion-range>
+    <ion-list no-lines class="language-list">
+      <pre class="language-name" *ngFor="let item of this.shelf">{{item.language}}</pre>
+    </ion-list>
+  </div>
+</ion-content>

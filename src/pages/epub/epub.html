@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{this.book.name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="showCatalog($event)"><ion-icon name="list"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen>
+  <div id="epubArea"></div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button><ion-icon name="arrow-up"></ion-icon></button>
+    </ion-buttons>
+    <!--<ion-range center class="pageRange" [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())" (ionChange)="this.epub.gotoPage(1)"
+      pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
+      </ion-range>-->
+      <ion-buttons end>
+        <button ion-button (click)="this.epub.prevPage()"><ion-icon name="arrow-back"></ion-icon></button>
+        <ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
+        <pre>{{this.currentPage}} {{this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())}} / {{this.epub.pagination.totalPages+1}} </pre>
+        <button ion-button (click)="this.epub.nextPage()"><ion-icon name="arrow-forward"></ion-icon></button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

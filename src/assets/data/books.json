@@ -1,0 +1,199 @@
+{
+  "shelf": [{
+      "language": "中 文",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png",
+          "epubURL": "assets/data/epub/moby-dick.epub"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png",
+          "epubURL": "assets/data/epub/中国印.epub"
+        },
+        {
+          "name": "中国克什克腾\n世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记\n暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "English",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png"
+        },
+        {
+          "name": "中国克什克腾世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "Français",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png"
+        },
+        {
+          "name": "中国克什克腾世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "Русский",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png"
+        },
+        {
+          "name": "中国克什克腾世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "Español",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png"
+        },
+        {
+          "name": "中国克什克腾世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "日本語",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png"
+        },
+        {
+          "name": "中国克什克腾世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "한 글",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png"
+        },
+        {
+          "name": "中国克什克腾世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    },
+    {
+      "language": "عربي/عربى",
+      "books": [{
+          "name": "会飞的恐龙",
+          "coverImageURL": "assets/data/coverImage/1_cn.png",
+          "epubURL": "assets/data/epub/1_cn.epub"
+        },
+        {
+          "name": "中国印",
+          "coverImageURL": "assets/data/coverImage/2_cn.png",
+          "epubURL": "assets/data/epub/中国印.epub"
+        },
+        {
+          "name": "中国克什克腾\n世界地质公园",
+          "coverImageURL": "assets/data/coverImage/3_cn.png"
+        },
+        {
+          "name": "中国国土资源概要",
+          "coverImageURL": "assets/data/coverImage/4_cn.png"
+        },
+        {
+          "name": "不动产登记\n暂行条例",
+          "coverImageURL": "assets/data/coverImage/5_cn.png"
+        }
+      ]
+    }
+  ]
+}
