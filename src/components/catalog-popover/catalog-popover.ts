@@ -18,7 +18,7 @@ export class CatalogPopoverComponent {
     params: NavParams
   ) {
     this.toc = params.data;
-    console.log(JSON.stringify(params.data));
+    //console.log(JSON.stringify(params.data));
   }
   openItem(item): void {
     this.viewCtrl.dismiss(item);

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, PopoverController,Platform } from 'ionic-angular';
+import { NavController, NavParams, PopoverController, Platform } from 'ionic-angular';
 import { CatalogPopoverComponent } from './../../components/catalog-popover/catalog-popover'
 import * as ePub from 'epubjs/build/epub';
 /*
@@ -33,18 +33,18 @@ export class EPubPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public popoverCtrl: PopoverController,
-    platform: Platform
+    public platform: Platform
   ) {
     this.book = navParams.data.book;
-    this.epubOption.width = platform.width();
-    this.epubOption.height = platform.height();
-    this.epubOption.bookPath = this.book
+    //this.epubOption.width = platform.width();
+    //this.epubOption.height = platform.height();
+    //this.epubOption.bookPath = this.book
     this.epub = ePub(this.epubOption);
   }
   ionViewDidLoad() {
     console.log(this.epubOption);
-    //this.epub.open(this.book.epubURL);
-    this.epub = ePub(this.epubOption);
+    this.epub.open(this.book.epubURL);
+    //this.epub = ePub(this.epubOption);
 
     this.epub.renderTo("epubArea");
 
@@ -60,12 +60,12 @@ export class EPubPage {
       console.info("EPUB: ", this.epub);
     });
 
-    // this.epub.generatePagination().then((pageList) => {
-    //   // console.log("Pagination:");
-    //   // console.log(pageList);
-    //   // this.totalPages = pageList.length;
-    //   //this.totalPages = this.epub.pagination.totalPages;
-    // });
+    this.epub.generatePagination().then((pageList) => {
+      console.log("Pagination length: ", this.epub.pagination.totalPages);
+      // console.log(pageList);
+      // this.totalPages = pageList.length;
+      //this.totalPages = this.epub.pagination.totalPages;
+    });
     this.epub.on('book:ready', () => {
       console.info("EPUB: ", this.epub);
     });
@@ -82,12 +82,13 @@ export class EPubPage {
   }
   // //显示目录
   showCatalog(event) {
+    if (this.toc == null) { return; }
     let popover = this.popoverCtrl.create(CatalogPopoverComponent, this.toc);
     //关闭后的处理
     popover.onDidDismiss(chapter => {
       if (chapter != null) {
         console.log("target CFI: " + JSON.stringify(chapter));
-        this.epub.displayChapter(chapter.href);
+        this.epub.goto(chapter.href);
       }
     });
     popover.present({ ev: event });
@@ -95,12 +96,12 @@ export class EPubPage {
   nav(event) {
     console.log("nav Event: " + JSON.stringify(event));
   }
-  nextPage(){
+  nextPage() {
     this.currentPage++;
-    console.log(this.currentPage);
+    console.log(this.currentPage,this.platform.width(),this.platform.height());
     this.epub.gotoPage(this.currentPage);
   }
-   prevPage(){
+  prevPage() {
     this.currentPage--;
     console.log(this.currentPage);
     this.epub.gotoPage(this.currentPage);

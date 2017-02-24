@@ -21,9 +21,11 @@ export class HomePage {
     });
   }
   ionViewDidEnter() {
-    if (this.platform.is("android") || this.platform.is("ios")) {
-      ScreenOrientation.lockOrientation("landscape");
-    }
+    try {
+      if (this.platform.is("android") || this.platform.is("ios")) {
+        //ScreenOrientation.lockOrientation("landscape");
+      }
+    } catch (e) { console.log(e) }
   }
   openItem(item) {
     this.navCtrl.push(EPubPage, { "book": item });
@@ -35,10 +37,10 @@ export class HomePage {
         case "portrait-primary":
         case "landscape-secondary":
         case "portrait-secondary":
-          ScreenOrientation.lockOrientation(item.lockOrientation);
+          //ScreenOrientation.lockOrientation(item.lockOrientation);
           break;
         default:
-          ScreenOrientation.unlockOrientation();
+          //ScreenOrientation.unlockOrientation();
           break;
       }
     }

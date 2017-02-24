@@ -18,7 +18,7 @@
       pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
     </ion-range>-->
     <ion-range center class="pageRange" [(ngModel)]="this.currentPage" (ionChange)="this.epub.gotoPage(this.currentPage)"
-      pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
+      pin="true" snaps="true" [min]="this.epub.pagination.firstPage" [max]="this.epub.pagination.lastPage" step="1">
     </ion-range>
     <ion-buttons end>
       <!--<ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
