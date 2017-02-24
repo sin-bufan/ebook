@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, PopoverController } from 'ionic-angular';
+import { NavController, NavParams, PopoverController,Platform } from 'ionic-angular';
 import { CatalogPopoverComponent } from './../../components/catalog-popover/catalog-popover'
 import * as ePub from 'epubjs/build/epub';
 /*
@@ -32,17 +32,19 @@ export class EPubPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public popoverCtrl: PopoverController
+    public popoverCtrl: PopoverController,
+    platform: Platform
   ) {
     this.book = navParams.data.book;
-    //this.epubOption.width = 1024;
-    //this.epubOption.height = 768;
-    //this.epubOption.bookPath = this.book
+    this.epubOption.width = platform.width();
+    this.epubOption.height = platform.height();
+    this.epubOption.bookPath = this.book
     this.epub = ePub(this.epubOption);
   }
   ionViewDidLoad() {
-
-    this.epub.open(this.book.epubURL);
+    console.log(this.epubOption);
+    //this.epub.open(this.book.epubURL);
+    this.epub = ePub(this.epubOption);
 
     this.epub.renderTo("epubArea");
 

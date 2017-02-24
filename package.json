@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "ebook",
+  "author": "Bu Fan",
+  "homepage": "http://www.sinfoMedia.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -37,8 +37,15 @@
     "cordova-plugin-console",
     "cordova-plugin-whitelist",
     "cordova-plugin-device",
-    "cordova-plugin-splashscreen"
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-screen-orientation"
   ],
-  "cordovaPlatforms": [],
-  "description": "HomeMate: An Ionic project"
+  "cordovaPlatforms": [
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    }
+  ],
+  "description": "电子书架"
 }

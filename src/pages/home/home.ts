@@ -1,5 +1,6 @@
+import { ScreenOrientation } from 'ionic-native';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 import { BooksData } from '../../providers/books-data';
 import { EPubPage } from '../epub/epub'
 @Component({
@@ -10,7 +11,8 @@ export class HomePage {
   shelf: any = [{ "books": [] }];//列表
   languageIndex: number = 0;
   constructor(public navCtrl: NavController,
-    public bookDataService: BooksData) {
+    public bookDataService: BooksData,
+    public platform: Platform) {
 
   }
   ionViewDidLoad() {
@@ -18,7 +20,27 @@ export class HomePage {
       this.shelf = data.shelf;
     });
   }
+  ionViewDidEnter() {
+    if (this.platform.is("android") || this.platform.is("ios")) {
+      ScreenOrientation.lockOrientation("landscape");
+    }
+  }
   openItem(item) {
     this.navCtrl.push(EPubPage, { "book": item });
+    if (this.platform.is("android") || this.platform.is("ios")) {
+      switch (item.lockOrientation) {
+        case "landscape":
+        case "portrait":
+        case "landscape-primary":
+        case "portrait-primary":
+        case "landscape-secondary":
+        case "portrait-secondary":
+          ScreenOrientation.lockOrientation(item.lockOrientation);
+          break;
+        default:
+          ScreenOrientation.unlockOrientation();
+          break;
+      }
+    }
   }
 }

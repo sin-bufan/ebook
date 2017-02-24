@@ -4,12 +4,14 @@
       "books": [{
           "name": "会飞的恐龙",
           "coverImageURL": "assets/data/coverImage/1_cn.png",
-          "epubURL": "assets/data/epub/moby-dick.epub"
+          "epubURL": "assets/data/epub/moby-dick.epub",
+          "lockOrientation":"portrait-primary"
         },
         {
           "name": "中国印",
           "coverImageURL": "assets/data/coverImage/2_cn.png",
-          "epubURL": "assets/data/epub/中国印.epub"
+          "epubURL": "assets/data/epub/中国印.epub",
+          "lockOrientation":"landscape"
         },
         {
           "name": "中国克什克腾\n世界地质公园",
