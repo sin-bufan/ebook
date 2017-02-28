@@ -16,6 +16,7 @@ export class EPubPage {
   book: any;
   epub: any;
   toc: any;
+  toolbarVisible:boolean=true;
   currentPage: number = 1;
   //totalPages: number = 1;
   epubOption: any = {
@@ -93,8 +94,13 @@ export class EPubPage {
     });
     popover.present({ ev: event });
   }
+  switchMode(){
+    console.log(this.toolbarVisible)
+    this.toolbarVisible = !this.toolbarVisible;
+  }
   nav(event) {
     console.log("nav Event: " + JSON.stringify(event));
+    this.nextPage();
   }
   nextPage() {
     this.currentPage++;

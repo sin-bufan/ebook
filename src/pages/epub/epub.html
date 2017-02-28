@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header *ngIf="this.currentPage>5">
   <ion-navbar>
     <ion-title>{{this.book.name}}</ion-title>
     <ion-buttons end>
@@ -6,10 +6,10 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-<ion-content fullscreen>
-  <div id="epubArea"></div>
+<ion-content fullscreen >
+  <div id="epubArea" (swipe)="nav(event)" (press)="switchMode()"></div>
 </ion-content>
-<ion-footer>
+<ion-footer *ngIf="this.toolbarVisible">
   <ion-toolbar>
     <ion-buttons start>
       <button ion-button (click)="prevPage()"><ion-icon name="arrow-back"></ion-icon></button>
@@ -17,13 +17,13 @@
     <!--<ion-range center class="pageRange" [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())" (ionChange)="nav(event)"
       pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
     </ion-range>-->
-    <ion-range center class="pageRange" [(ngModel)]="this.currentPage" (ionChange)="this.epub.gotoPage(this.currentPage)"
-      pin="true" snaps="true" [min]="this.epub.pagination.firstPage" [max]="this.epub.pagination.lastPage" step="1">
-    </ion-range>
-    <ion-buttons end>
-      <!--<ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
+    <ion-range center class="pageRange" [(ngModel)]="this.currentPage" (ionChange)="this.epub.gotoPage(this.currentPage)" pin="true"
+      snaps="true" [min]="this.epub.pagination.firstPage" [max]="this.epub.pagination.lastPage" step="1">
+      </ion-range>
+      <ion-buttons end>
+        <!--<ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
         <pre>{{this.currentPage}} {{this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())}} / {{this.epub.pagination.totalPages+1}} </pre>-->
-      <button ion-button (click)="nextPage()"><ion-icon name="arrow-forward"></ion-icon></button>
-    </ion-buttons>
+        <button ion-button (click)="nextPage()"><ion-icon name="arrow-forward"></ion-icon></button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-footer>
