@@ -3,10 +3,7 @@ import { NavController, NavParams, PopoverController, Platform } from 'ionic-ang
 import { CatalogPopoverComponent } from './../../components/catalog-popover/catalog-popover'
 import * as ePub from 'epubjs/build/epub';
 /*
-  Generated class for the EBook page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
 */
 @Component({
   selector: 'page-epub',

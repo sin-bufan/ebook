@@ -4,7 +4,7 @@
       "books": [{
           "name": "会飞的恐龙",
           "coverImageURL": "assets/data/coverImage/1_cn.png",
-          "epubURL": "assets/data/epub/moby-dick.epub",
+          "epubURL": "assets/data/epub/moby_dick.epub",
           "lockOrientation":"portrait-primary"
         },
         {
@@ -15,15 +15,21 @@
         },
         {
           "name": "中国克什克腾\n世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
+          "coverImageURL": "assets/data/coverImage/3_cn.png",
+          "epubURL": "assets/data/epub/accessible_epub_3.epub",
+          "lockOrientation":"portrait-primary"
         },
         {
           "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
+          "coverImageURL": "assets/data/coverImage/4_cn.png",
+          "epubURL": "assets/data/epub/linear_algebra.epub",
+          "lockOrientation":"portrait-primary"
         },
         {
           "name": "不动产登记\n暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
+          "coverImageURL": "assets/data/coverImage/5_cn.png",
+          "epubURL": "assets/data/epub/internal_link.epub",
+          "lockOrientation":"portrait-primary"
         }
       ]
     },

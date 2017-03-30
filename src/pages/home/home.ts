@@ -23,7 +23,7 @@ export class HomePage {
   ionViewDidEnter() {
     try {
       if (this.platform.is("android") || this.platform.is("ios")) {
-        ScreenOrientation.lockOrientation("landscape");
+        //ScreenOrientation.lockOrientation("landscape");
       }
     } catch (e) { console.log(e) }
   }
@@ -37,10 +37,10 @@ export class HomePage {
         case "portrait-primary":
         case "landscape-secondary":
         case "portrait-secondary":
-          ScreenOrientation.lockOrientation(item.lockOrientation);
+          //ScreenOrientation.lockOrientation(item.lockOrientation);
           break;
         default:
-          ScreenOrientation.unlockOrientation();
+          //ScreenOrientation.unlockOrientation();
           break;
       }
     }
