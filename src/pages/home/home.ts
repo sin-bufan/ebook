@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
-import { ScreenOrientation } from 'ionic-native/screen-orientation';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { BooksData } from '../../providers/books-data';
 import { EPubPage } from '../epub/epub'
 @Component({
@@ -12,7 +12,8 @@ export class HomePage {
   languageIndex: number = 0;
   constructor(public navCtrl: NavController,
     public bookDataService: BooksData,
-    public platform: Platform) {
+    public platform: Platform,
+    public screenOrientation: ScreenOrientation) {
 
   }
   ionViewDidLoad() {
@@ -23,7 +24,7 @@ export class HomePage {
   ionViewDidEnter() {
     try {
       if (this.platform.is("android") || this.platform.is("ios")) {
-        //ScreenOrientation.lockOrientation("landscape");
+        this.screenOrientation.lock("landscape");
       }
     } catch (e) { console.log(e) }
   }
@@ -37,10 +38,10 @@ export class HomePage {
         case "portrait-primary":
         case "landscape-secondary":
         case "portrait-secondary":
-          //ScreenOrientation.lockOrientation(item.lockOrientation);
+          this.screenOrientation.lock(item.lockOrientation);
           break;
         default:
-          //ScreenOrientation.unlockOrientation();
+          this.screenOrientation.unlock();
           break;
       }
     }

@@ -1,10 +1,14 @@
-import { CatalogPopoverComponent } from './../components/catalog-popover/catalog-popover';
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { NgModule } from '@angular/core';
+import { IonicApp, IonicModule } from 'ionic-angular';
+
 import { EBook } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { EPubPage } from '../pages/epub/epub';
-import { BooksData } from '../providers/books-data';
+
+import { CatalogPopoverComponent } from './../components/catalog-popover/catalog-popover';
+
+import { AppProviders } from './app.providers';
+
 @NgModule({
   declarations: [
     EBook,
@@ -22,6 +26,6 @@ import { BooksData } from '../providers/books-data';
     EPubPage,
     CatalogPopoverComponent
   ],
-  providers: [BooksData, { provide: ErrorHandler, useClass: IonicErrorHandler }]
+  providers: AppProviders.getProviders()
 })
 export class AppModule { }
