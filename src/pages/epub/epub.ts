@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, PopoverController, Platform } from 'ionic-angular';
 import { CatalogPopoverComponent } from './../../components/catalog-popover/catalog-popover'
 import * as ePub from 'epubjs/build/epub';
-/*
 
-*/
 @Component({
   selector: 'page-epub',
   templateUrl: 'epub.html'

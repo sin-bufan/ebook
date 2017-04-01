@@ -1,6 +1,5 @@
 {
-  "name": "2.2.0",
+  "name": "2.3.0",
   "app_id": "",
-  "v2": true,
-  "typescript": true
+  "projectTypeId": "ionic-angular"
 }

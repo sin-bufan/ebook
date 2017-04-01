@@ -1,6 +1,6 @@
-import { ScreenOrientation } from 'ionic-native';
 import { Component } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
+import { ScreenOrientation } from 'ionic-native/screen-orientation';
 import { BooksData } from '../../providers/books-data';
 import { EPubPage } from '../epub/epub'
 @Component({

@@ -1,6 +1,7 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
+
 @import "ionic.globals";
 
 
@@ -11,32 +12,8 @@ $font-path: "../assets/fonts";
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 
-//ion-list
-$list-ios-margin-top:0;
-$list-ios-margin-bottom:0;
-$list-ios-margin-left:0;
-$list-ios-margin-right:0;
-$list-inset-ios-margin-top:0;
-$list-inset-ios-margin-bottom:0;
-$list-inset-ios-margin-left:0;
-$list-inset-ios-margin-right:0;
-
-//ion-range
-//$range-ios-slider-height:36px;
-//$range-ios-hit-width:36px;
-//$range-ios-knob-width:36px;
-
-// $range-ios-padding-vertical:0;
-// $range-ios-bar-height:12px;
-// $range-ios-bar-background-color:rgba(0,0,0,.4);
-// $range-ios-bar-active-background-color:rgba(0,0,0,0);
-// $range-ios-tick-height:12px;
-// $range-ios-tick-border-radius:6px;
-// $range-ios-tick-background-color:rgba(0,0,0,0);
-// $range-ios-tick-active-background-color:rgba(0,0,0,0);
 
 
-$label-ios-margin:0;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -91,7 +68,7 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
 
-@import "ionicons";
+@import "ionic.ionicons";
 
 
 // Fonts
