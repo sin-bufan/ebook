@@ -1,26 +1,30 @@
 page-home {
+  //背景
   ion-content {
     background: url('../assets/images/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .container {
-    @extend .flex-box-display-column;
-    width: 100%;
-    height: 60%;
-    margin-top:20%; 
-    align-items: center;
-    justify-content: space-around;
-  }
-  // *****************************************************************
+  } // *****************************************************************
+  //书架
   .book-list {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 5%;
     @extend .flex-box-display;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
-    padding: 0;
+    margin: 0;
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      margin-top: 20%;
+      color: #ffffff;
+    }
   }
   .book-item {
     @extend .flex-box-display-column;
@@ -29,36 +33,62 @@ page-home {
     background-color: transparent;
   }
   .book-coverImage {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-  }
-  .book-name {
-    width: 100%;
-    color: #ffffff;
-    font-size: 1rem;
-    padding: 0;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    line-height: 1.2rem;
-  }
+    -moz-box-shadow: 2px 2px 5px #666666;
+    -webkit-box-shadow: 2px 2px 5px #666666;
+    box-shadow: 2px 2px 5px #666666;
+  } // .book-name {
+  //   max-width: 8rem;
+  //   color: #ffffff;
+  //   font-size: 1rem;
+  //   padding: 0;
+  //   margin-top: 0.5rem;
+  //   margin-bottom: 0;
+  //   line-height: 1.2rem;
+  //   word-wrap: break-word;
+  //   word-break: normal;
+  // } 
   // *****************************************************************
-  .languageRange {
-    width: 80%;
+  .language-section {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    right: 5%;
+  }
+  .language-bar {
+    position: relative;
+    height: 1rem;
+    top: 1.5rem;
+    left: 2%;
+    width: 96%;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
   }
   .language-list {
     @extend .flex-box-display;
     justify-content: space-between;
-    width: 85%;
-    //margin-bottom: 1rem;
+    margin: 0;
+  }
+  .language-item {
+    @extend .flex-box-display-column;
+    width: 8rem;
+    height: 5rem;
+    padding: 0px;
+  }
+  .language-thumb {
+    width: auto;
+    height: 2rem;
+    margin-bottom: 0.2rem
   }
   .language-name {
-    font-family: Arial;
+    // font-family: Arial;
     color: #efd47c;
-    width: 10%;
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
-    padding: 0;
     margin: 0;
   }
 }

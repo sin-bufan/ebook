@@ -1,0 +1,24 @@
+styles-popover {
+  width: 300px;
+  ion-list {
+    ion-item {
+      color: #888888 !important;
+      font-size: 2rem !important;
+    }
+    .dot {
+      font-size: 2rem;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 4px 4px;
+      position: relative;
+      border: 1px solid;
+      border-color: #aaaaaa !important;
+      box-shadow: 2px 2px 2px #888888;
+    }
+    .dot.selected {
+      border-width: 2px solid;
+      border-color: #327eff;
+    }
+  }
+}

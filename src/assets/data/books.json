@@ -1,207 +1,56 @@
 {
-  "shelf": [{
-      "language": "中 文",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png",
-          "epubURL": "assets/data/epub/moby_dick.epub",
-          "lockOrientation":"portrait-primary"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png",
-          "epubURL": "assets/data/epub/中国印.epub",
-          "lockOrientation":"landscape"
-        },
-        {
-          "name": "中国克什克腾\n世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png",
-          "epubURL": "assets/data/epub/accessible_epub_3.epub",
-          "lockOrientation":"portrait-primary"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png",
-          "epubURL": "assets/data/epub/linear_algebra.epub",
-          "lockOrientation":"portrait-primary"
-        },
-        {
-          "name": "不动产登记\n暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png",
-          "epubURL": "assets/data/epub/internal_link.epub",
-          "lockOrientation":"portrait-primary"
-        }
-      ]
-    },
-    {
-      "language": "English",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png"
-        },
-        {
-          "name": "中国克什克腾世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    },
-    {
-      "language": "Français",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png"
-        },
-        {
-          "name": "中国克什克腾世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    },
-    {
-      "language": "Русский",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png"
-        },
-        {
-          "name": "中国克什克腾世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    },
-    {
-      "language": "Español",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png"
-        },
-        {
-          "name": "中国克什克腾世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    },
-    {
-      "language": "日本語",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png"
-        },
-        {
-          "name": "中国克什克腾世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    },
-    {
-      "language": "한 글",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png"
-        },
-        {
-          "name": "中国克什克腾世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    },
-    {
-      "language": "عربي/عربى",
-      "books": [{
-          "name": "会飞的恐龙",
-          "coverImageURL": "assets/data/coverImage/1_cn.png",
-          "epubURL": "assets/data/epub/1_cn.epub"
-        },
-        {
-          "name": "中国印",
-          "coverImageURL": "assets/data/coverImage/2_cn.png",
-          "epubURL": "assets/data/epub/中国印.epub"
-        },
-        {
-          "name": "中国克什克腾\n世界地质公园",
-          "coverImageURL": "assets/data/coverImage/3_cn.png"
-        },
-        {
-          "name": "中国国土资源概要",
-          "coverImageURL": "assets/data/coverImage/4_cn.png"
-        },
-        {
-          "name": "不动产登记\n暂行条例",
-          "coverImageURL": "assets/data/coverImage/5_cn.png"
-        }
-      ]
-    }
-  ]
+  "shelfs": [{
+    "language": "English",
+    "books": [{
+        "name": "The Flying Dinosaur",
+        "coverImageURL": "assets/data/coverImage/1_cn.png",
+        "epubURL": "assets/data/epub/1_en.epub",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Chinese Seal Cutting 'Jinshi Awards'",
+        "coverImageURL": "assets/data/coverImage/2_cn.png",
+        "epubURL": "assets/data/epub/2_en.epub",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Tourist Map of Hexigten unesco Global Geopark, China",
+        "coverImageURL": "assets/data/coverImage/3_cn.png",
+        "epubURL": "assets/data/epub/3_en.epub",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "General Information on Land and Resources of China",
+        "coverImageURL": "assets/data/coverImage/4_cn.png",
+        "epubURL": "assets/data/epub/4_en.epub",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      },
+      {
+        "name": "The Interim Regulation on Real Estate Registration",
+        "coverImageURL": "assets/data/coverImage/5_cn.png",
+        "epubURL": "assets/data/epub/5_en.epub",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      }
+    ]
+  }, {
+    "language": "Français",
+    "books": []
+  }, {
+    "language": "Pусский",
+    "books": []
+  }, {
+    "language": "Español",
+    "books": []
+  }, {
+    "language": "日本語",
+    "books": []
+  }, {
+    "language": "한글",
+    "books": []
+  }]
 }

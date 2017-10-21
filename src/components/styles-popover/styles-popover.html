@@ -1,0 +1,12 @@
+<ion-list no-lines>
+  <ion-item>
+    字号：
+    <button class="dot" (click)="changeFontSize('smaller')">-</button>
+    <button class="dot" (click)="changeFontSize('larger')">+</button>
+  </ion-item>
+  <ion-item>
+    配色：
+    <button class="dot" [style.background-color]="item.bg" [style.color]="item.text" *ngFor="let item of this.THEME_COLORS"
+      (click)="changeBackground(item)">A</button>
+  </ion-item>
+</ion-list>

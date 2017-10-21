@@ -1,5 +1,8 @@
 {
-  "name": "2.3.0",
-  "app_id": "",
-  "projectTypeId": "ionic-angular"
+  "name": "ebook",
+  "app_id": "com.sinfomedia.app.ebook",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

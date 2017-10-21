@@ -1,0 +1,56 @@
+<encryption xmlns="urn:oasis:names:tc:opendocument:xmlns:container" xmlns:enc="http://www.w3.org/2001/04/xmlenc#">
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/AdobeKaitiStd-Regular.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/BaskOldFace.TTF" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/HYa4gj.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/HYb1gj.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/MyriadPro-Regular.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/SourceHanSansCN-Light.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/SourceHanSansCN-Medium.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/SourceHanSansCN-Regular.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/Verdana.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+</encryption>

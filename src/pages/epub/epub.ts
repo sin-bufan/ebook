@@ -1,110 +1,260 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams, PopoverController, Platform } from 'ionic-angular';
-import { CatalogPopoverComponent } from './../../components/catalog-popover/catalog-popover'
-import * as ePub from 'epubjs/build/epub';
+import { Component, ChangeDetectorRef } from '@angular/core';
+//import { ElementRef, ViewChild } from '@angular/core';
+import { trigger, state, style, transition, animate, keyframes } from '@angular/core';
+import { NavParams, PopoverController, LoadingController, MenuController, Events } from 'ionic-angular';
+import { Gesture } from "ionic-angular/gestures/gesture";
+import { StylesPopoverComponent } from './../../components/styles-popover/styles-popover'
+import { ImageViewerController } from 'ionic-img-viewer';
+import ePub from 'epubjs/build/epub';
 
+//declare var EPUBJS: any;
 @Component({
   selector: 'page-epub',
-  templateUrl: 'epub.html'
+  templateUrl: 'epub.html',
+  //头部底部显示 、 隐藏动画效果
+  animations: [
+    trigger('showState', [
+      //隐藏状态
+      state('hide', style({ opacity: 0, display: 'none' })),
+      //显示状态
+      state('show', style({ opacity: 1, display: 'block' })),
+      //动画
+      transition('hide => show', [
+        animate(500, keyframes([
+          style({ opacity: 0, offset: 0, display: 'block' }),
+          style({ opacity: 1, offset: 1, display: 'none' })
+        ]))
+      ]),
+      transition('show => hide', [
+        animate(500, keyframes([
+          style({ opacity: 1, offset: 0, display: 'block' }),
+          style({ opacity: 0, offset: 1, display: 'none' })
+        ]))
+      ])
+    ])
+  ]
 })
 export class EPubPage {
   book: any;
   epub: any;
   toc: any;
-  toolbarVisible:boolean=true;
+  toolbarShowState: string = "hide";
   currentPage: number = 1;
-  //totalPages: number = 1;
+  gesture: Gesture;
   epubOption: any = {
     bookPath: null,
     version: 1, // Changing will cause stored Book information to be reloaded
-    restore: false, // Skips parsing epub contents, loading from localstorage instead
+    restore: true, // Skips parsing epub contents, loading from localstorage instead
     storage: false, // true (auto) or false (none) | override: 'ram', 'websqldatabase', 'indexeddb', 'filesystem'
     spreads: false, // Displays two columns
     fixedLayout: false, //-- Will turn off pagination
-    styles: {}, // Styles to be applied to epub
-    width: false,
-    height: false,
+    styles: { "margin": "0px", "padding": "0px" }, // Styles to be applied to epub
   }
   constructor(
-    public navCtrl: NavController,
-    public navParams: NavParams,
-    public popoverCtrl: PopoverController,
-    public platform: Platform
+    navParams: NavParams,
+    private popoverCtrl: PopoverController,
+    private menuCtrl: MenuController,
+    private loadingCtrl: LoadingController,
+    private ref: ChangeDetectorRef,
+    private imageViewerCtrl: ImageViewerController,
+    private events: Events
   ) {
     this.book = navParams.data.book;
-    //this.epubOption.width = platform.width();
-    //this.epubOption.height = platform.height();
-    //this.epubOption.bookPath = this.book
+    if (this.book.type == "epub2") {
+      this.epubOption.styles = { "margin": "10px" };
+    }
     this.epub = ePub(this.epubOption);
   }
+  //加载图书，初始化
   ionViewDidLoad() {
-    console.log(this.epubOption);
     this.epub.open(this.book.epubURL);
-    //this.epub = ePub(this.epubOption);
-
     this.epub.renderTo("epubArea");
-
+    //MATADATA
     this.epub.getMetadata().then((meta) => {
-      console.log("MATA: ", meta);
+      //console.log("MATA: ", meta);
     });
-
+    //目录
     this.epub.getToc().then((toc) => {
-      console.log("TOC: ", toc);
-      this.toc = toc;
+      // console.log("TOC: ", toc);
+      this.initTOC(toc)
     });
-    this.epub.pageListReady.then((pageList) => {
-      console.info("EPUB: ", this.epub);
+    //分页
+    let loader = this.loadingCtrl.create({
+      content: "正在分页...",
+      duration: 0
     });
-
+    loader.present();
     this.epub.generatePagination().then((pageList) => {
-      console.log("Pagination length: ", this.epub.pagination.totalPages);
-      // console.log(pageList);
-      // this.totalPages = pageList.length;
-      //this.totalPages = this.epub.pagination.totalPages;
+      var currentLocation = this.epub.getCurrentLocationCfi();
+      this.currentPage = this.epub.pagination.pageFromCfi(currentLocation);
+      loader.dismiss();
     });
+    //其他
     this.epub.on('book:ready', () => {
       console.info("EPUB: ", this.epub);
     });
-    // this.epub.on('book:pageChanged', (location) => {
-    //   //这个事件会被触发2次，是Epub.js的问题.......
-    //   console.log("PAGE CHANGED TO LOCATION: ", location);
-    //   console.log("CURRENT PAGE NO: ", this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi()));
+    this.epub.on('renderer:chapterDisplayed', (location) => {
+      this.initBookGesture();
+      this.initBookPageAnimation();
+    });
+    //页面变化之后
+    this.epub.on('book:pageChanged', (location) => {
+      this.currentPage = location.anchorPage;
+      console.log('------book:pageChanged------', location);
+      console.log("currentPage", this.currentPage);
+      this.ref.detectChanges();
+    });
+    // this.epub.on('renderer:locationChanged', (locationCfi) => {
+    //   var currentLocation = this.epub.getCurrentLocationCfi();
+    //   var currentPage = this.epub.pagination.pageFromCfi(currentLocation);
+    //   console.log('------renderer:locationChanged------',locationCfi);
+    //   console.log("currentPage", currentPage);
     // });
-
   }
 
-  ionViewWillUnload() {
+  ionViewWillLeave() {
+    if (this.gesture) {
+      this.gesture.destroy();
+    }
+    this.events.unsubscribe("SELECT_CATALOG_MENU");
+    this.events.publish('UPDATE_CATALOG_MENU', null);
     this.epub.destroy();
+  }
+  //翻页动画（只在同一章节内部翻页的时候生效）
+  initBookPageAnimation() {
+    let style = this.epub.renderer.doc.createElement("style");
+    style.innerHTML = "*{-webkit-transition: transform {t} ease;-moz-transition: tranform {t} ease;-o-transition: transform {t} ease;-ms-transition: transform {t} ease;transition: transform {t} ease;}";
+    style.innerHTML = style.innerHTML.split("{t}").join("0.5s");
+    this.epub.renderer.doc.body.appendChild(style);
+  }
+  //手势控制
+  initBookGesture() {
+    if (this.gesture) { this.gesture.destroy(); }
+    this.gesture = new Gesture(this.epub.renderer.doc);
+    this.gesture.listen();
+    //双击--显示隐藏顶部标题栏和底部工具栏
+    this.gesture.on('doubletap', (event) => {
+      console.log('doubletap: ', event);
+      switch (this.toolbarShowState) {
+        case "show"://显示
+          this.toolbarShowState = "hide";
+          break;
+        case "hide"://隐藏
+          this.toolbarShowState = "show";
+          break;
+        default:
+          break;
+      }
+      this.ref.detectChanges();
+    });
+    //翻页手势
+    this.gesture.on('swipe', (event) => {
+      console.log('swipe: ', event.deltaX, event);
+      if (event.deltaX > 0) {
+        this.nextPage();
+      } else if (event.deltaX < 0) {
+        this.prevPage();
+      }
+    });
+    this.gesture.on('swipeleft', (event) => {
+      console.log('swipeleft: ', event.deltaX, event);
+      this.nextPage();
+    });
+    this.gesture.on('swiperight', (event) => {
+      console.log('swiperight: ', event.deltaX, event);
+      this.prevPage();
+    });
+
+    //平移手势
+    this.gesture.on('panleft', (event) => {
+      console.log('panleft: ', event);
+      if (event.deltaX > 20)
+        this.nextPage();
+    });
+    this.gesture.on('panright', (event) => {
+      console.log('panright: ', event);
+      if (event.deltaX > 20)
+        this.nextPage();
+    });
+    this.gesture.on('panEnd', (event) => {
+      console.log('panEnd: ', event);
+    });
+    //点击，边缘翻页，其他地方显示图片
+    this.gesture.on('tap', (event) => {
+      console.log('tap: ', event.deltaX, event);
+      //边缘翻页
+      let EDGE_WIDTH = 100;
+      if (event.center.x > window.innerWidth - EDGE_WIDTH) {
+        this.nextPage();
+      } else if (event.center.x < EDGE_WIDTH) {
+        this.prevPage();
+      } else {
+        //点击其他地方，显示图片
+        // if (event.target && event.target.tagName == "IMG") {
+        //   let imageViewer = this.imageViewerCtrl.create(event.target);
+        //   imageViewer.present();
+        // }
+      }
+      //this.ref.detectChanges();
+    });
+    //按住手势，显示图片
+    this.gesture.on('press', (event) => {
+      console.log('pressed!!');
+      if (event.target && event.target.tagName == "IMG") {
+        let imageViewer = this.imageViewerCtrl.create(event.target);
+        imageViewer.present();
+      }
+    });
+    //缩放手势--只有epub3
+    // if (this.book.type == "epub3") {
+    //   this.gesture.on('pinch', (event) => {
+    //     console.log('pinch: ', "zoom:" + event.scale);
+
+    //     var bodyElement = this.epub.renderer.doc.body;
+    //     var transform = EPUBJS.core.prefixed('transform');
+    //     var transformOrigin = EPUBJS.core.prefixed('transformOrigin');
+    //     bodyElement.style.position = "absolute";
+    //     bodyElement.style[transform] = "scale(" + Math.max(event.scale, 1) + ")";
+    //     bodyElement.style[transformOrigin] = "0% 0%";
+    //   });
+    // }
+
   }
   // //显示目录
   showCatalog(event) {
-    if (this.toc == null) { return; }
-    let popover = this.popoverCtrl.create(CatalogPopoverComponent, this.toc);
-    //关闭后的处理
-    popover.onDidDismiss(chapter => {
-      if (chapter != null) {
-        console.log("target CFI: " + JSON.stringify(chapter));
-        this.epub.goto(chapter.href);
-      }
+    this.menuCtrl.open();
+  }
+  initTOC(toc) {
+    this.events.publish('UPDATE_CATALOG_MENU', toc);
+    this.events.subscribe("SELECT_CATALOG_MENU", (eventData) => {
+      let chapter = eventData;
+      console.log("target CFI: " + JSON.stringify(chapter));
+      this.epub.goto(chapter.href);
+      this.menuCtrl.close();
     });
-    popover.present({ ev: event });
   }
-  switchMode(){
-    console.log(this.toolbarVisible)
-    this.toolbarVisible = !this.toolbarVisible;
+  rangeChangeHandler(event) {
+    if (event.value != this.currentPage) {
+      this.epub.gotoPage(event.value);
+    }
   }
-  nav(event) {
-    console.log("nav Event: " + JSON.stringify(event));
-    this.nextPage();
-  }
+  //翻页
   nextPage() {
-    this.currentPage++;
-    console.log(this.currentPage,this.platform.width(),this.platform.height());
-    this.epub.gotoPage(this.currentPage);
+    if (this.currentPage >= this.epub.pagination.lastPage)
+      return;
+    this.epub.nextPage();
+    //console.log(this.currentPage, this.epub.pagination.lastPage);
   }
   prevPage() {
-    this.currentPage--;
-    console.log(this.currentPage);
-    this.epub.gotoPage(this.currentPage);
+    if (this.currentPage <= this.epub.pagination.firstPage)
+      return;
+    this.epub.prevPage();
+    //console.log(this.currentPage, this.epub.pagination.lastPage);
+  }
+
+  //样式设置
+  showStylesPopover(event) {
+    let popover = this.popoverCtrl.create(StylesPopoverComponent, this.epub);
+    popover.present({ ev: event });
   }
 }

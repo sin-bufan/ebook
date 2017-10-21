@@ -1,1 +1,6 @@
-<ion-nav [root]="rootPage"></ion-nav>
+ <ion-menu id="bookCatalog" [content]="content" side="right" >
+  <ion-content>
+      <catalog #catalog></catalog>
+  </ion-content>
+</ion-menu>
+ <ion-nav [root]="rootPage" #content main></ion-nav>

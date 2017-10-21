@@ -1,29 +1,24 @@
-<ion-header>
+<ion-header [@showState]="this.toolbarShowState">
   <ion-navbar>
     <ion-title>{{this.book.name}}</ion-title>
     <ion-buttons end>
-      <button ion-button (click)="showCatalog($event)"><ion-icon name="list"></ion-icon></button>
+      <button ion-button (click)="showStylesPopover($event)" *ngIf="this.book.type=='epub2'"><ion-icon name="settings"></ion-icon></button>
+      <button ion-button (click)="showCatalog($event)"><ion-icon name="menu"></ion-icon></button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-<ion-content fullscreen >
-  <div id="epubArea" (swipe)="nav(event)" (press)="switchMode()"></div>
-</ion-content>
-<ion-footer *ngIf="this.toolbarVisible">
-  <ion-toolbar>
-    <ion-buttons start>
-      <button ion-button (click)="prevPage()"><ion-icon name="arrow-back"></ion-icon></button>
+<!--<ion-content fullscreen isScrolling="false">-->
+<div #epubContainer id="epubArea"></div>
+<!--</ion-content>-->
+<ion-footer [@showState]="this.toolbarShowState">
+  <ion-toolbar *ngIf="this.epub.pagination.pages.length>0">
+    <ion-range center class="pageRange" [ngModel]="this.currentPage" (ionChange)="rangeChangeHandler($event)" debounce="200"
+      pin="true" snaps="true" [min]="this.epub.pagination.firstPage" [max]="this.epub.pagination.lastPage" step="1">
+    </ion-range>
+    <ion-buttons end>
+      <button ion-button (click)="prevPage()" [disabled]="this.currentPage <= this.epub.pagination.firstPage"><ion-icon name="arrow-back"></ion-icon></button>
+      <ion-label end>{{this.currentPage}} / {{this.epub.pagination.lastPage}}</ion-label>
+      <button ion-button (click)="nextPage()" [disabled]="this.currentPage >= this.epub.pagination.lastPage"><ion-icon name="arrow-forward"></ion-icon></button>
     </ion-buttons>
-    <!--<ion-range center class="pageRange" [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())" (ionChange)="nav(event)"
-      pin="true" snaps="true" min="1" [max]="this.epub.pagination.totalPages" step="1">
-    </ion-range>-->
-    <ion-range center class="pageRange" [(ngModel)]="this.currentPage" (ionChange)="this.epub.gotoPage(this.currentPage)" pin="true"
-      snaps="true" [min]="this.epub.pagination.firstPage" [max]="this.epub.pagination.lastPage" step="1">
-      </ion-range>
-      <ion-buttons end>
-        <!--<ion-label [ngModel]="this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())"></ion-label>
-        <pre>{{this.currentPage}} {{this.epub.pagination.pageFromCfi(this.epub.getCurrentLocationCfi())}} / {{this.epub.pagination.totalPages+1}} </pre>-->
-        <button ion-button (click)="nextPage()"><ion-icon name="arrow-forward"></ion-icon></button>
-      </ion-buttons>
   </ion-toolbar>
 </ion-footer>

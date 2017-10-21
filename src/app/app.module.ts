@@ -1,22 +1,30 @@
-import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { BrowserModule} from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { EBook } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { EPubPage } from '../pages/epub/epub';
 
-import { CatalogPopoverComponent } from './../components/catalog-popover/catalog-popover';
+import { StylesPopoverComponent } from './../components/styles-popover/styles-popover';
+import { CatalogComponent } from './../components/catalog/catalog';
 
-import { AppProviders } from './app.providers';
+import { BooksData } from '../providers/books-data';
+import { ScreenOrientationProvider, StatusBarProvider, SplashScreenProvider} from './app.providers';
+import { HttpModule } from "@angular/http";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';//动画
 
+import { IonicImageViewerModule } from 'ionic-img-viewer';//看图模块
 @NgModule({
   declarations: [
     EBook,
     HomePage,
     EPubPage,
-    CatalogPopoverComponent
+    StylesPopoverComponent,
+    CatalogComponent
   ],
   imports: [
+    BrowserModule,HttpModule,BrowserAnimationsModule,IonicImageViewerModule,
     IonicModule.forRoot(EBook)
   ],
   bootstrap: [IonicApp],
@@ -24,8 +32,15 @@ import { AppProviders } from './app.providers';
     EBook,
     HomePage,
     EPubPage,
-    CatalogPopoverComponent
+    StylesPopoverComponent,
+    CatalogComponent
   ],
-  providers: AppProviders.getProviders()
+  providers: [
+    BooksData,
+    StatusBarProvider,
+    SplashScreenProvider,
+    ScreenOrientationProvider,
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
+  ]
 })
 export class AppModule { }

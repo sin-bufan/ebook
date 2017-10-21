@@ -1,15 +1,19 @@
 <ion-content fullscreen>
-  <div class="container">
-    <ion-list no-lines class="book-list">
-      <button class="book-item" (click)="openItem(item)" *ngFor="let item of this.shelf[this.languageIndex].books">
-          <img class="book-coverImage" src="{{item.coverImageURL}}" *ngIf="item.coverImageURL!=''" />
-          <pre class="book-name">{{item.name}}</pre>
-      </button>
-    </ion-list>
-    <ion-range mode="ios" class="languageRange" [(ngModel)]="languageIndex" snaps="true" min="0" max="7" step="1">
-    </ion-range>
+  <ion-list no-lines class="book-list">
+    <button class="book-item" (click)="openItem(item)" *ngFor="let item of this.shelf.books">
+      <img class="book-coverImage" src="{{item.coverImageURL}}" (press)="showPic($event)" *ngIf="item.coverImageURL!=''" />
+      <!-- <p class="book-name">{{item.name}}</p> -->
+    </button>
+  </ion-list>
+  <div class="book-list" *ngIf="this.shelf.books.length==0"><p>NOT READY YET!!!</p></div>
+  <div class="language-section" *ngIf="this.shelfs.length>1">
+    <div class="language-bar"></div>
     <ion-list no-lines class="language-list">
-      <pre class="language-name" *ngFor="let item of this.shelf">{{item.language}}</pre>
+      <div class="language-item" *ngFor="let item of this.shelfs" (click)="selectLanguage(item)">
+        <img class="language-thumb" src="assets/images/thumb.png" *ngIf="item.language==this.shelf.language"/>
+        <div class="language-thumb" *ngIf="item.language!=this.shelf.language"></div>
+        <ion-label class="language-name">{{item.language}}</ion-label>
+      </div>
     </ion-list>
   </div>
 </ion-content>
