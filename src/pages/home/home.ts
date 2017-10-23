@@ -15,7 +15,7 @@ export class HomePage {
     private bookDataService: BooksData,
     private platform: Platform,
     private screenOrientation: ScreenOrientation,
-    private imageViewerCtrl: ImageViewerController, ) {
+    private imageViewerCtrl: ImageViewerController ) {
 
   }
   ionViewDidLoad() {

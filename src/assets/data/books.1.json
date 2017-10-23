@@ -1,0 +1,56 @@
+{
+  "shelfs": [{
+    "language": "English",
+    "books": [{
+        "name": "The Flying Dinosaur",
+        "coverImageURL": "assets/data/coverImage/1_cn.png",
+        "epubURL": "assets/data/epub/1_en.epub",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Chinese Seal Cutting 'Jinshi Awards'",
+        "coverImageURL": "assets/data/coverImage/2_cn.png",
+        "epubURL": "assets/data/epub/2_en.epub",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Tourist Map of Hexigten unesco Global Geopark, China",
+        "coverImageURL": "assets/data/coverImage/3_cn.png",
+        "epubURL": "assets/data/epub/3_en.epub",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      // {
+      //   "name": "General Information on Land and Resources of China",
+      //   "coverImageURL": "assets/data/coverImage/4_cn.png",
+      //   "epubURL": "assets/data/epub/4_en.epub",
+      //   "lockOrientation": "portrait-primary",
+      //   "type": "epub2"
+      // },
+      {
+        "name": "The Interim Regulation on Real Estate Registration",
+        "coverImageURL": "assets/data/coverImage/5_cn.png",
+        "epubURL": "assets/data/epub/5_en.epub",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      }
+    ]
+  }, {
+    "language": "Français",
+    "books": []
+  }, {
+    "language": "Pусский",
+    "books": []
+  }, {
+    "language": "Español",
+    "books": []
+  }, {
+    "language": "日本語",
+    "books": []
+  }, {
+    "language": "한글",
+    "books": []
+  }]
+}

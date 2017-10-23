@@ -10,7 +10,7 @@ export class BooksData {
 
   data: any;
   api_url: string = "assets/data/books.json";
-  constructor(public http: Http) {
+  constructor(private http: Http) {
     this.data = null;
   }
 

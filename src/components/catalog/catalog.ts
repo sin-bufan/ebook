@@ -1,5 +1,6 @@
 import { Events } from 'ionic-angular';
-import { Component, Renderer, ElementRef, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
+//import { Renderer, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'catalog',
@@ -9,8 +10,8 @@ export class CatalogComponent {
 
   @Input('toc') toc: any;
   constructor(
-    public element: ElementRef,
-    public renderer: Renderer,
+    //public element: ElementRef,
+    //public renderer: Renderer,
     private events: Events
   ) {
 
