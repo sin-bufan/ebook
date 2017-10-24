@@ -130,58 +130,36 @@ export class EPubPage {
   //手势控制
   initBookGesture() {
     if (this.gesture) { this.gesture.destroy(); }
-    this.gesture = new Gesture(this.epub.renderer.doc);
+    //this.gesture = new Gesture(this.epub.renderer.doc);
+    this.gesture = new Gesture(this.epub.renderer.doc.body);
     this.gesture.listen();
     //双击--显示隐藏顶部标题栏和底部工具栏
-    this.gesture.on('doubletap', (event) => {
-      console.log('doubletap: ', event);
-      switch (this.toolbarShowState) {
-        case "show"://显示
-          this.toolbarShowState = "hide";
-          break;
-        case "hide"://隐藏
-          this.toolbarShowState = "show";
-          break;
-        default:
-          break;
-      }
-      this.ref.detectChanges();
-    });
-    //翻页手势
+    // this.gesture.on('doubletap', (event) => {
+    //   console.log('doubletap: ', event);
+    //   switch (this.toolbarShowState) {
+    //     case "show"://显示
+    //       this.toolbarShowState = "hide";
+    //       break;
+    //     case "hide"://隐藏
+    //       this.toolbarShowState = "show";
+    //       break;
+    //   }
+    //   this.ref.detectChanges();
+    // });
+    //翻页手势 swipe手势
     this.gesture.on('swipe', (event) => {
-      console.log('swipe: ', event.deltaX, event);
-      if (event.deltaX > 0) {
+      console.log('swipe: ', event, event.direction);
+      const PAN_LEFT: Number = 2;
+      const PAN_RIGHT: Number = 4;
+      if (event.direction == PAN_LEFT) {
         this.nextPage();
-      } else if (event.deltaX < 0) {
+      } else if (event.direction == PAN_RIGHT) {
         this.prevPage();
       }
     });
-    this.gesture.on('swipeleft', (event) => {
-      console.log('swipeleft: ', event.deltaX, event);
-      this.nextPage();
-    });
-    this.gesture.on('swiperight', (event) => {
-      console.log('swiperight: ', event.deltaX, event);
-      this.prevPage();
-    });
-
-    //平移手势
-    this.gesture.on('panleft', (event) => {
-      console.log('panleft: ', event);
-      if (event.deltaX > 20)
-        this.nextPage();
-    });
-    this.gesture.on('panright', (event) => {
-      console.log('panright: ', event);
-      if (event.deltaX > 20)
-        this.nextPage();
-    });
-    this.gesture.on('panEnd', (event) => {
-      console.log('panEnd: ', event);
-    });
     //点击，边缘翻页，其他地方显示图片
     this.gesture.on('tap', (event) => {
-      console.log('tap: ', event.deltaX, event);
+      console.log('tap: ', event);
       //边缘翻页
       let EDGE_WIDTH = 100;
       if (event.center.x > window.innerWidth - EDGE_WIDTH) {
@@ -189,11 +167,16 @@ export class EPubPage {
       } else if (event.center.x < EDGE_WIDTH) {
         this.prevPage();
       } else {
-        //点击其他地方，显示图片
-        // if (event.target && event.target.tagName == "IMG") {
-        //   let imageViewer = this.imageViewerCtrl.create(event.target);
-        //   imageViewer.present();
-        // }
+        //点击其他地方，显示菜单
+        switch (this.toolbarShowState) {
+          case "show"://显示
+            this.toolbarShowState = "hide";
+            break;
+          case "hide"://隐藏
+            this.toolbarShowState = "show";
+            break;
+        }
+        this.ref.detectChanges();
       }
       //this.ref.detectChanges();
     });
