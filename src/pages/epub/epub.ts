@@ -85,8 +85,11 @@ export class EPubPage {
     });
     loader.present();
     this.epub.generatePagination().then((pageList) => {
-      var currentLocation = this.epub.getCurrentLocationCfi();
-      this.currentPage = this.epub.pagination.pageFromCfi(currentLocation);
+      this.currentPage = this.epub.pagination.firstPage;
+      this.epub.gotoPage(this.currentPage);
+      // var currentLocation = this.epub.getCurrentLocationCfi();
+      // if (currentLocation!=null)
+      //   this.currentPage = this.epub.pagination.pageFromCfi(currentLocation);
       loader.dismiss();
     });
     //其他
@@ -232,7 +235,7 @@ export class EPubPage {
     if (this.currentPage <= this.epub.pagination.firstPage)
       return;
     this.epub.prevPage();
-    //console.log(this.currentPage, this.epub.pagination.lastPage);
+    console.log(this.currentPage, this.epub.pagination.lastPage,this.epub.pagination);
   }
 
   //样式设置
