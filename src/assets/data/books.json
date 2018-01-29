@@ -4,35 +4,305 @@
     "books": [{
         "name": "The Flying Dinosaur",
         "coverImageURL": "assets/data/coverImage/1_en.png",
-        "epubURL": "assets/data/epub/1_en.epub",
+        "epubURL": "assets/data/epub/1_en/",
         "lockOrientation": "landscape",
         "type": "epub3"
       },
       {
         "name": "Chinese Seal Cutting 'Jinshi Awards'",
         "coverImageURL": "assets/data/coverImage/2_en.png",
-        "epubURL": "assets/data/epub/2_en.epub",
+        "epubURL": "assets/data/epub/2_en/",
         "lockOrientation": "landscape",
         "type": "epub3"
       },
       {
-        "name": "Tourist Map of Hexigten unesco Global Geopark, China",
+        "name": "Tourist Map of Hexigten UNESCO Global Geopark,  China",
         "coverImageURL": "assets/data/coverImage/3_en.png",
-        "epubURL": "assets/data/epub/3_en.epub",
+        "epubURL": "assets/data/epub/3_en/",
         "lockOrientation": "landscape",
         "type": "epub3"
       },
       {
         "name": "General Information on Land and Resources of China",
         "coverImageURL": "assets/data/coverImage/4_en.png",
-        "epubURL": "assets/data/epub/4_en.epub",
+        "epubURL": "assets/data/epub/4_en/",
         "lockOrientation": "portrait-primary",
         "type": "epub2"
       },
       {
         "name": "The Interim Regulation on Real Estate Registration",
         "coverImageURL": "assets/data/coverImage/5_en.png",
-        "epubURL": "assets/data/epub/5_en.epub",
+        "epubURL": "assets/data/epub/5_en/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      }
+    ]
+
+}, {
+  "language": "Français",
+  "books": [{
+      "name": "Dinosaures volants",
+      "coverImageURL": "assets/data/coverImage/1_fr.png",
+      "epubURL": "assets/data/epub/1_fr/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Le prix Jinshi des pierres à sceaux chinoises",
+      "coverImageURL": "assets/data/coverImage/2_fr.png",
+      "epubURL": "assets/data/epub/2_fr/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Guide touristique du Géoparc mondial de Hexigten de Chine(UNESCO)",
+      "coverImageURL": "assets/data/coverImage/3_fr.png",
+      "epubURL": "assets/data/epub/3_fr/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Aperçu général des ressources territoriales de Chine",
+      "coverImageURL": "assets/data/coverImage/4_fr.png",
+      "epubURL": "assets/data/epub/4_fr/",
+      "lockOrientation": "portrait-primary",
+      "type": "epub2"
+    },
+    {
+      "name": "Règlements provisoires sur l'enregistrement des biens immobiliers",
+      "coverImageURL": "assets/data/coverImage/5_fr.png",
+      "epubURL": "assets/data/epub/5_fr/",
+      "lockOrientation": "portrait-primary",
+      "type": "epub2"
+    }
+  ]
+}, {
+  "language": "Pусский",
+  "books": [{
+      "name": "Летающие динозавры ",
+      "coverImageURL": "assets/data/coverImage/1_ru.png",
+      "epubURL": "assets/data/epub/1_ru/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Китайская резная печать Приз «За лучший камень»",
+      "coverImageURL": "assets/data/coverImage/2_ru.png",
+      "epubURL": "assets/data/epub/2_ru/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Путеводитель по Всемирному геопарку ЮНЕСКО Хэшикэтэн в Китае",
+      "coverImageURL": "assets/data/coverImage/3_ru.png",
+      "epubURL": "assets/data/epub/3_ru/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Общие сведения о национальных природных ресурсах КНР",
+      "coverImageURL": "assets/data/coverImage/4_ru.png",
+      "epubURL": "assets/data/epub/4_ru/",
+      "lockOrientation": "portrait-primary",
+      "type": "epub2"
+    },
+    {
+      "name": "Временное положение о регистрации недвижимости",
+      "coverImageURL": "assets/data/coverImage/5_ru.png",
+      "epubURL": "assets/data/epub/5_ru/",
+      "lockOrientation": "portrait-primary",
+      "type": "epub2"
+    }
+  ]
+}, {
+  "language": "Español",
+  "books": [{
+      "name": "Dinosaurios voladores",
+      "coverImageURL": "assets/data/coverImage/1_es.png",
+      "epubURL": "assets/data/epub/1_es/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Premio de Metal y Piedra al Sello Chino",
+      "coverImageURL": "assets/data/coverImage/2_es.png",
+      "epubURL": "assets/data/epub/2_es/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Mapa Turístico del Geoparque Mundial de Hexigten China de la UNESCO",
+      "coverImageURL": "assets/data/coverImage/3_es.png",
+      "epubURL": "assets/data/epub/3_es/",
+      "lockOrientation": "landscape",
+      "type": "epub3"
+    },
+    {
+      "name": "Información General de Tierras y Recursos de China",
+      "coverImageURL": "assets/data/coverImage/4_es.png",
+      "epubURL": "assets/data/epub/4_es/",
+      "lockOrientation": "portrait-primary",
+      "type": "epub2"
+    },
+    {
+      "name": "Reglamento Provisional del Registro de Bienes Inmobiliarios",
+      "coverImageURL": "assets/data/coverImage/5_es.png",
+      "epubURL": "assets/data/epub/5_es/",
+      "lockOrientation": "portrait-primary",
+      "type": "epub2"
+      }
+    ]
+
+}, {
+    "language": "بالعربية",
+    "books": [{
+        "name": "الديناصورات الطائرة",
+        "coverImageURL": "assets/data/coverImage/1_ar.png",
+        "epubURL": "assets/data/epub/1_ar/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "جائزة الختم الصيني «جين شي» (الحجر الذهبي)",
+        "coverImageURL": "assets/data/coverImage/2_ar.png",
+        "epubURL": "assets/data/epub/2_ar/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "الخريطة السياحية حدائق خشيغتن الجيولوجية العالمية",
+        "coverImageURL": "assets/data/coverImage/3_ar.png",
+        "epubURL": "assets/data/epub/3_ar/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "دليل الأراضي والموارد الصينية",
+        "coverImageURL": "assets/data/coverImage/4_ar.png",
+        "epubURL": "assets/data/epub/4_ar/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      },
+      {
+        "name": "اللائحة المؤقتة للتسجيل العقاري",
+        "coverImageURL": "assets/data/coverImage/5_ar.png",
+        "epubURL": "assets/data/epub/5_ar/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      }
+    ]
+
+}, {
+    "language": "Deutsch",
+    "books": [{
+        "name": "Die Dinosaurier, die fliegen",
+        "coverImageURL": "assets/data/coverImage/1_de.png",
+        "epubURL": "assets/data/epub/1_de/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Der Gold-und-Stein-Preis für den chinesischen Stempel",
+        "coverImageURL": "assets/data/coverImage/2_de.png",
+        "epubURL": "assets/data/epub/2_de/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Touristische Landkarte des Chinesischen UNESCO-Global-Geoparks Heshigten",
+        "coverImageURL": "assets/data/coverImage/3_de.png",
+        "epubURL": "assets/data/epub/3_de/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "Eine Übersicht über Chinas Land und Ressourcen",
+        "coverImageURL": "assets/data/coverImage/4_de.png",
+        "epubURL": "assets/data/epub/4_de/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      },
+      {
+        "name": "Die Provisorische Verordnung für die Registrierung von Immobilien",
+        "coverImageURL": "assets/data/coverImage/5_de.png",
+        "epubURL": "assets/data/epub/5_de/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      }
+    ]
+
+}, {
+    "language": "日本語",
+    "books": [{
+        "name": "飛べる恐竜",
+        "coverImageURL": "assets/data/coverImage/1_jp.png",
+        "epubURL": "assets/data/epub/1_jp/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "中国印金石賞",
+        "coverImageURL": "assets/data/coverImage/2_jp.png",
+        "epubURL": "assets/data/epub/2_jp/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "中国・へシグテンユネスコ世界ジオパークガイドブック",
+        "coverImageURL": "assets/data/coverImage/3_jp.png",
+        "epubURL": "assets/data/epub/3_jp/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "中国国土資源概況",
+        "coverImageURL": "assets/data/coverImage/4_jp.png",
+        "epubURL": "assets/data/epub/4_jp/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      },
+      {
+        "name": "不動産登記暫定条例",
+        "coverImageURL": "assets/data/coverImage/5_jp.png",
+        "epubURL": "assets/data/epub/5_jp/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      }
+    ]
+}, {
+    "language": "한글",
+    "books": [{
+        "name": "하늘을 나는 공룡",
+        "coverImageURL": "assets/data/coverImage/1_kr.png",
+        "epubURL": "assets/data/epub/1_kr/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "중국도장 금석상",
+        "coverImageURL": "assets/data/coverImage/2_kr.png",
+        "epubURL": "assets/data/epub/2_kr/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "중국커스커덩(克什克騰) 유네스코(UNESCO)세계지질공원안내도",
+        "coverImageURL": "assets/data/coverImage/3_kr.png",
+        "epubURL": "assets/data/epub/3_kr/",
+        "lockOrientation": "landscape",
+        "type": "epub3"
+      },
+      {
+        "name": "중국국토자원개요",
+        "coverImageURL": "assets/data/coverImage/4_kr.png",
+        "epubURL": "assets/data/epub/4_kr/",
+        "lockOrientation": "portrait-primary",
+        "type": "epub2"
+      },
+      {
+        "name": "부동산등기임시시행조례",
+        "coverImageURL": "assets/data/coverImage/5_kr.png",
+        "epubURL": "assets/data/epub/5_kr/",
         "lockOrientation": "portrait-primary",
         "type": "epub2"
       }

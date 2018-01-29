@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+	<head>
+		<meta name="dtb:uid" content="urn:uuid:692d72c1-0f7b-453b-967d-d24b4175928c" />
+		<meta name="dtb:depth" content="2" />
+		<meta name="dtb:totalPageCount" content="0" />
+		<meta name="dtb:maxPageNumber" content="0" />
+	</head>
+	<docTitle>
+		<text>4_kr</text>
+	</docTitle>
+	<navMap>
+		<navPoint id="navpoint1" playOrder="1"><navLabel><text>머리말</text></navLabel><content src="4_kr.xhtml#_idParaDest-1" /></navPoint>
+		<navPoint id="navpoint2" playOrder="2"><navLabel><text>제1장  토지자원</text></navLabel><content src="4_kr.xhtml#_idParaDest-2" />
+			<navPoint id="navpoint3" playOrder="3"><navLabel><text>Ⅰ. 토지자원 이용 현황</text></navLabel><content src="4_kr.xhtml#_idParaDest-3" /></navPoint>
+			<navPoint id="navpoint4" playOrder="4"><navLabel><text>Ⅱ. 경작지 보호</text></navLabel><content src="4_kr.xhtml#_idParaDest-4" /></navPoint>
+			<navPoint id="navpoint5" playOrder="5"><navLabel><text>Ⅲ. 토지 정비 사업 준공 상황</text></navLabel><content src="4_kr.xhtml#_idParaDest-5" /></navPoint>
+			<navPoint id="navpoint6" playOrder="6"><navLabel><text>Ⅳ. 국유 건설용지 공급 현황</text></navLabel><content src="4_kr.xhtml#_idParaDest-6" /></navPoint>
+			<navPoint id="navpoint7" playOrder="7"><navLabel><text>Ⅴ. 토지 절약•집약이용 상황 </text></navLabel><content src="4_kr.xhtml#_idParaDest-7" /></navPoint>
+			<navPoint id="navpoint8" playOrder="8"><navLabel><text>Ⅵ. 토지시장</text></navLabel><content src="4_kr.xhtml#_idParaDest-8" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint9" playOrder="9"><navLabel><text>제2장  광산자원</text></navLabel><content src="4_kr.xhtml#_idParaDest-9" />
+			<navPoint id="navpoint10" playOrder="10"><navLabel><text>Ⅰ. 광산자원 현황</text></navLabel><content src="4_kr.xhtml#_idParaDest-10" /></navPoint>
+			<navPoint id="navpoint11" playOrder="11"><navLabel><text>Ⅱ. 지질광산 탐사</text></navLabel><content src="4_kr.xhtml#_idParaDest-11" /></navPoint>
+			<navPoint id="navpoint12" playOrder="12"><navLabel><text>Ⅲ. 광산자원 개발 이용</text></navLabel><content src="4_kr.xhtml#_idParaDest-12" /></navPoint>
+			<navPoint id="navpoint13" playOrder="13"><navLabel><text>Ⅳ.  광업권 및 양도 상황</text></navLabel><content src="4_kr.xhtml#_idParaDest-13" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint14" playOrder="14"><navLabel><text>제3장  해양자원</text></navLabel><content src="4_kr.xhtml#_idParaDest-14" />
+			<navPoint id="navpoint15" playOrder="15"><navLabel><text>Ⅰ. 해양자원 경제 상황 </text></navLabel><content src="4_kr.xhtml#_idParaDest-15" /></navPoint>
+			<navPoint id="navpoint16" playOrder="16"><navLabel><text>Ⅱ. 해양 개발이용  </text></navLabel><content src="4_kr.xhtml#_idParaDest-16" /></navPoint>
+			<navPoint id="navpoint17" playOrder="17"><navLabel><text>Ⅲ. 해양 환경   </text></navLabel><content src="4_kr.xhtml#_idParaDest-17" /></navPoint>
+			<navPoint id="navpoint18" playOrder="18"><navLabel><text>Ⅳ.  해양 권익</text></navLabel><content src="4_kr.xhtml#_idParaDest-18" /></navPoint>
+			<navPoint id="navpoint19" playOrder="19"><navLabel><text>Ⅴ. 해양 관리  </text></navLabel><content src="4_kr.xhtml#_idParaDest-19" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint20" playOrder="20"><navLabel><text>제4장  국토자원 관리 제도와 정책 </text></navLabel><content src="4_kr.xhtml#_idParaDest-20" />
+			<navPoint id="navpoint21" playOrder="21"><navLabel><text>Ⅰ. 법치 국토건설 </text></navLabel><content src="4_kr.xhtml#_idParaDest-21" /></navPoint>
+			<navPoint id="navpoint22" playOrder="22"><navLabel><text>Ⅱ. 국토자원 분야 개혁</text></navLabel><content src="4_kr.xhtml#_idParaDest-22" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint23" playOrder="23"><navLabel><text>제5장  지질조사와 지질자료 서비스</text></navLabel><content src="4_kr.xhtml#_idParaDest-23" />
+			<navPoint id="navpoint24" playOrder="24"><navLabel><text>Ⅰ. 기초 지질조사</text></navLabel><content src="4_kr.xhtml#_idParaDest-24" /></navPoint>
+			<navPoint id="navpoint25" playOrder="25"><navLabel><text>Ⅱ. 광산자원 조사 평가</text></navLabel><content src="4_kr.xhtml#_idParaDest-25" /></navPoint>
+			<navPoint id="navpoint26" playOrder="26"><navLabel><text>Ⅲ. 해양지질조사</text></navLabel><content src="4_kr.xhtml#_idParaDest-26" /></navPoint>
+			<navPoint id="navpoint27" playOrder="27"><navLabel><text>Ⅳ. 지질 자료 서비스</text></navLabel><content src="4_kr.xhtml#_idParaDest-27" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint28" playOrder="28"><navLabel><text>제6장  지질환경보호와 지질재해 방지</text></navLabel><content src="4_kr.xhtml#_idParaDest-28" />
+			<navPoint id="navpoint29" playOrder="29"><navLabel><text>Ⅰ. 광산 지질환경 회복 정비   </text></navLabel><content src="4_kr.xhtml#_idParaDest-29" /></navPoint>
+			<navPoint id="navpoint30" playOrder="30"><navLabel><text>Ⅱ. 지질재해와 방지</text></navLabel><content src="4_kr.xhtml#_idParaDest-30" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint31" playOrder="31"><navLabel><text>제7장  과학기술과 국제협력</text></navLabel><content src="4_kr.xhtml#_idParaDest-31" />
+			<navPoint id="navpoint32" playOrder="32"><navLabel><text>Ⅰ. 국토자원 과학기술 사업의 중대한 진전 </text></navLabel><content src="4_kr.xhtml#_idParaDest-32" /></navPoint>
+			<navPoint id="navpoint33" playOrder="33"><navLabel><text>Ⅱ. 과학기술 계획과 성과</text></navLabel><content src="4_kr.xhtml#_idParaDest-33" /></navPoint>
+			<navPoint id="navpoint34" playOrder="34"><navLabel><text>Ⅲ. 국제협력</text></navLabel><content src="4_kr.xhtml#_idParaDest-34" /></navPoint>
+			<navPoint id="navpoint35" playOrder="35"><navLabel><text>Ⅳ. 국토자원 정보화 건설</text></navLabel><content src="4_kr.xhtml#_idParaDest-35" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint36" playOrder="36"><navLabel><text>제8장  지리 정보 측량 제도</text></navLabel><content src="4_kr.xhtml#_idParaDest-36" />
+			<navPoint id="navpoint37" playOrder="37"><navLabel><text>Ⅰ. 지리 정보 측량 제도 법제 건설과 관리감독</text></navLabel><content src="4_kr.xhtml#_idParaDest-37" /></navPoint>
+			<navPoint id="navpoint38" playOrder="38"><navLabel><text>Ⅱ. 제1차 전국지리 국정 센서스 </text></navLabel><content src="4_kr.xhtml#_idParaDest-38" /></navPoint>
+			<navPoint id="navpoint39" playOrder="39"><navLabel><text>Ⅲ. 지리 정보산업 발전</text></navLabel><content src="4_kr.xhtml#_idParaDest-39" /></navPoint>
+			<navPoint id="navpoint40" playOrder="40"><navLabel><text>Ⅳ. 지리 측량 제도 정보 자원 구축</text></navLabel><content src="4_kr.xhtml#_idParaDest-40" /></navPoint>
+			<navPoint id="navpoint41" playOrder="41"><navLabel><text>Ⅴ. 지리 측량 제도 정보 공공 서비스</text></navLabel><content src="4_kr.xhtml#_idParaDest-41" /></navPoint>
+		</navPoint>
+	</navMap>
+</ncx>
