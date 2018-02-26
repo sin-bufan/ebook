@@ -3,7 +3,7 @@
     <ion-title>{{this.book.name}}</ion-title>
     <ion-buttons end>
       <button ion-button (click)="showStylesPopover($event)" *ngIf="this.book.type=='epub2'"><ion-icon name="settings"></ion-icon></button>
-      <button ion-button (click)="showCatalog($event)"><ion-icon name="menu"></ion-icon></button>
+      <button ion-button *ngIf="hasCatalog" (click)="showCatalog($event)"><ion-icon name="menu"></ion-icon></button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+	<head>
+		<meta name="dtb:uid" content="urn:uuid:692d72c1-0f7b-453b-967d-d24b4175928c" />
+		<meta name="dtb:depth" content="3" />
+		<meta name="dtb:totalPageCount" content="0" />
+		<meta name="dtb:maxPageNumber" content="0" />
+	</head>
+	<docTitle>
+		<text>4_de</text>
+	</docTitle>
+	<navMap>
+		<navPoint id="navpoint1" playOrder="1"><navLabel><text>Vorwort</text></navLabel><content src="4_de.xhtml#_idParaDest-1" /></navPoint>
+		<navPoint id="navpoint2" playOrder="2"><navLabel><text>Kapitel I. Bodenressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-2" />
+			<navPoint id="navpoint3" playOrder="3"><navLabel><text>I. Status der Nutzung von Bodenressourcen </text></navLabel><content src="4_de.xhtml#_idParaDest-3" /></navPoint>
+			<navPoint id="navpoint4" playOrder="4"><navLabel><text>II. Schutz der Anbauflächen </text></navLabel><content src="4_de.xhtml#_idParaDest-4" /></navPoint>
+			<navPoint id="navpoint5" playOrder="5"><navLabel><text>III. Abgeschlossene Projekte in der Landsanierung </text></navLabel><content src="4_de.xhtml#_idParaDest-5" /></navPoint>
+			<navPoint id="navpoint6" playOrder="6"><navLabel><text>IV. Situation der Versorgung mit staatseigenem Baugelände</text></navLabel><content src="4_de.xhtml#_idParaDest-6" /></navPoint>
+			<navPoint id="navpoint7" playOrder="7"><navLabel><text>V. Situation der Landerhaltung und intensiven Landnutzung</text></navLabel><content src="4_de.xhtml#_idParaDest-7" /></navPoint>
+			<navPoint id="navpoint8" playOrder="8"><navLabel><text>VI. Grundstücksmarkt</text></navLabel><content src="4_de.xhtml#_idParaDest-8" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint9" playOrder="9"><navLabel><text>Kapitel II. Mineralische Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-9" />
+			<navPoint id="navpoint10" playOrder="10"><navLabel><text>I. Status der Mineralressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-10" /></navPoint>
+			<navPoint id="navpoint11" playOrder="11"><navLabel><text>II. Geologische Exploration der Mineralressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-11" /></navPoint>
+			<navPoint id="navpoint12" playOrder="12"><navLabel><text>III. Erschließung und Nutzung der Mineralressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-12" /></navPoint>
+			<navPoint id="navpoint13" playOrder="13"><navLabel><text>(III) Erschließung der Bodenschätze neben Erdöl und -gas</text></navLabel><content src="4_de.xhtml#_idParaDest-13" /></navPoint>
+			<navPoint id="navpoint14" playOrder="14"><navLabel><text>IV. Erkundungs- und Schürfrechte und ihre Veräußerung</text></navLabel><content src="4_de.xhtml#_idParaDest-14" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint15" playOrder="15"><navLabel><text>Kapitel III. Maritime Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-15" />
+			<navPoint id="navpoint16" playOrder="16"><navLabel><text>I. Status der Meeresressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-16" /></navPoint>
+			<navPoint id="navpoint17" playOrder="17"><navLabel><text>II. Erschließung und Nutzung des Meeres</text></navLabel><content src="4_de.xhtml#_idParaDest-17" /></navPoint>
+			<navPoint id="navpoint18" playOrder="18"><navLabel><text>III. Meeresumwelt</text></navLabel><content src="4_de.xhtml#_idParaDest-18" /></navPoint>
+			<navPoint id="navpoint19" playOrder="19"><navLabel><text>IV. Maritime Rechte und Interessen</text></navLabel><content src="4_de.xhtml#_idParaDest-19" /></navPoint>
+			<navPoint id="navpoint20" playOrder="20"><navLabel><text>V. Meeresverwaltung</text></navLabel><content src="4_de.xhtml#_idParaDest-20" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint21" playOrder="21"><navLabel><text>Kapitel IV. Verwaltungssystem und Politik bezüglich Land und Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-21" />
+			<navPoint id="navpoint22" playOrder="22"><navLabel><text>I. Aufbau einer rechtsstaatlichen Verwaltung der territorialen Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-22" /></navPoint>
+			<navPoint id="navpoint23" playOrder="23"><navLabel><text>II. Reform im Bereich der territorialen Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-23" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint24" playOrder="24"><navLabel><text>Kapitel V. Geologische Untersuchung und geologische Datendienste</text></navLabel><content src="4_de.xhtml#_idParaDest-24" />
+			<navPoint id="navpoint25" playOrder="25"><navLabel><text>I. Geologische Grundlagenuntersuchung </text></navLabel><content src="4_de.xhtml#_idParaDest-25" /></navPoint>
+			<navPoint id="navpoint26" playOrder="26"><navLabel><text>III. Geologische Meeresuntersuchung</text></navLabel><content src="4_de.xhtml#_idParaDest-26" /></navPoint>
+			<navPoint id="navpoint27" playOrder="27"><navLabel><text>IV. Geologische Datendienste</text></navLabel><content src="4_de.xhtml#_idParaDest-27" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint28" playOrder="28"><navLabel><text>Kapitel VI. Geoökologischer Schutz und die Prävention sowie Kontrolle von geologischen Katastrophen</text></navLabel><content src="4_de.xhtml#_idParaDest-28" />
+			<navPoint id="navpoint29" playOrder="29"><navLabel><text>I. Die geoökologische Wiederherstellung und Sanierung von Bergwerken   </text></navLabel><content src="4_de.xhtml#_idParaDest-29" /></navPoint>
+			<navPoint id="navpoint30" playOrder="30"><navLabel><text>II. Die geologischen Katastrophen und ihre Verhütung sowie Beseitigung</text></navLabel><content src="4_de.xhtml#_idParaDest-30" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint31" playOrder="31"><navLabel><text>Kapitel VII. Wissenschaft und Technik sowie internationale Kooperation</text></navLabel><content src="4_de.xhtml#_idParaDest-31" />
+			<navPoint id="navpoint32" playOrder="32"><navLabel><text>I. Die erheblichen Fortschritte in Wissenschaft und Technologie bezüglich territorialer Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-32" /></navPoint>
+			<navPoint id="navpoint33" playOrder="33"><navLabel><text>II. Wissenschaftlich-technische Pläne und Ergebnisse</text></navLabel><content src="4_de.xhtml#_idParaDest-33" /></navPoint>
+			<navPoint id="navpoint34" playOrder="34"><navLabel><text>III. Internationale Kooperation</text></navLabel><content src="4_de.xhtml#_idParaDest-34" /></navPoint>
+			<navPoint id="navpoint35" playOrder="35"><navLabel><text>IV. Die Informatisierung der Verwaltung der territorialen Ressourcen</text></navLabel><content src="4_de.xhtml#_idParaDest-35" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint36" playOrder="36"><navLabel><text>Kapitel VIII. Die Vermessung und Kartierung sowie Geoinformationen</text></navLabel><content src="4_de.xhtml#_idParaDest-36" />
+			<navPoint id="navpoint37" playOrder="37"><navLabel><text>I. Der Aufbau der Rechtsstaatlichkeit im Bereich Kartierung und Vermessung sowie Geoinformationen und ihre Aufsicht</text></navLabel><content src="4_de.xhtml#_idParaDest-37" /></navPoint>
+			<navPoint id="navpoint38" playOrder="38"><navLabel><text>II. Erste landesweite Erhebung der geographischen Landeskunde</text></navLabel><content src="4_de.xhtml#_idParaDest-38" /></navPoint>
+			<navPoint id="navpoint39" playOrder="39"><navLabel><text>III. Entwicklung der geographischen Informationsindustrie</text></navLabel><content src="4_de.xhtml#_idParaDest-39" /></navPoint>
+			<navPoint id="navpoint40" playOrder="40"><navLabel><text>IV. Aufbau von Ressourcen für Vermessung, Kartierung und Geoinformationen</text></navLabel><content src="4_de.xhtml#_idParaDest-40" /></navPoint>
+			<navPoint id="navpoint41" playOrder="41"><navLabel><text>V. Öffentliche Dienstleistung kartographischer Geoinformationen</text></navLabel><content src="4_de.xhtml#_idParaDest-41" /></navPoint>
+		</navPoint>
+	</navMap>
+</ncx>

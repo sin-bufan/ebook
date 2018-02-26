@@ -38,6 +38,7 @@ export class EPubPage {
   book: any;
   epub: any;
   toc: any;
+  hasCatalog:boolean=false;
   toolbarShowState: string = "hide";
   currentPage: number = 1;
   gesture: Gesture;
@@ -75,7 +76,7 @@ export class EPubPage {
     });
     //目录
     this.epub.getToc().then((toc) => {
-      // console.log("TOC: ", toc);
+      console.log("TOC: ", toc);
       this.initTOC(toc)
     });
     //分页
@@ -211,6 +212,9 @@ export class EPubPage {
     this.menuCtrl.open();
   }
   initTOC(toc) {
+    if (toc.length>0){
+      this.hasCatalog=true
+    }
     this.events.publish('UPDATE_CATALOG_MENU', toc);
     this.events.subscribe("SELECT_CATALOG_MENU", (eventData) => {
       let chapter = eventData;

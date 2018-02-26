@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 11.0" />
+		<meta name="cover" content="x1.png" />
+		<meta property="ibooks:specified-fonts">true</meta>
+		<dc:title>1_ar</dc:title>
+		<dc:date>2018-02-07T06:54:14Z</dc:date>
+		<dc:language>ar-SA</dc:language>
+		<dc:language>zh-CN</dc:language>
+		<meta property="dcterms:modified">2018-02-07T06:54:14Z</meta>
+		<dc:identifier id="bookid">urn:uuid:29d919dd-24f5-4384-be78-b447c9dc299b</dc:identifier>
+		<!--fixed-layout options-->
+		<meta property="rendition:layout">pre-paginated</meta>
+		<meta property="rendition:orientation">landscape</meta>
+		<meta property="rendition:spread">none</meta>
+	</metadata>
+	<manifest>
+		<item id="x1_ar-1" href="1_ar-1.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-2" href="1_ar-2.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-3" href="1_ar-3.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-4" href="1_ar-4.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-5" href="1_ar-5.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-6" href="1_ar-6.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-7" href="1_ar-7.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-8" href="1_ar-8.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-9" href="1_ar-9.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-10" href="1_ar-10.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-11" href="1_ar-11.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-12" href="1_ar-12.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-13" href="1_ar-13.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-14" href="1_ar-14.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-15" href="1_ar-15.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-16" href="1_ar-16.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-17" href="1_ar-17.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-18" href="1_ar-18.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-19" href="1_ar-19.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-20" href="1_ar-20.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-21" href="1_ar-21.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-22" href="1_ar-22.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-23" href="1_ar-23.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-24" href="1_ar-24.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-25" href="1_ar-25.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-26" href="1_ar-26.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-27" href="1_ar-27.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-28" href="1_ar-28.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-29" href="1_ar-29.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-30" href="1_ar-30.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-31" href="1_ar-31.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-32" href="1_ar-32.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-33" href="1_ar-33.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-34" href="1_ar-34.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-35" href="1_ar-35.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-36" href="1_ar-36.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-37" href="1_ar-37.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-38" href="1_ar-38.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-39" href="1_ar-39.xhtml" media-type="application/xhtml+xml" />
+		<item id="x1_ar-40" href="1_ar-40.xhtml" media-type="application/xhtml+xml" />
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="DecoTypeNaskh.TTF" href="font/DecoTypeNaskh.TTF" media-type="application/vnd.ms-opentype" />
+		<item id="HacenEgypt.TTF" href="font/HacenEgypt.TTF" media-type="application/x-font-ttf" />
+		<item id="HacenLinerPrint-out.ttf" href="font/HacenLinerPrint-out.ttf" media-type="application/x-font-ttf" />
+		<item id="HacenLinerPrint-outLight.ttf" href="font/HacenLinerPrint-outLight.ttf" media-type="application/x-font-ttf" />
+		<item id="HacenTypographer.ttf" href="font/HacenTypographer.ttf" media-type="application/x-font-ttf" />
+		<item id="x1.png" href="image/1.png" media-type="image/png" properties="cover-image" />
+		<item id="x106.png" href="image/106.png" media-type="image/png" />
+		<item id="x109.png" href="image/109.png" media-type="image/png" />
+		<item id="x124.png" href="image/124.png" media-type="image/png" />
+		<item id="x126.png" href="image/126.png" media-type="image/png" />
+		<item id="x127.png" href="image/127.png" media-type="image/png" />
+		<item id="x136.png" href="image/136.png" media-type="image/png" />
+		<item id="x138.png" href="image/138.png" media-type="image/png" />
+		<item id="x140.png" href="image/140.png" media-type="image/png" />
+		<item id="x146.png" href="image/146.png" media-type="image/png" />
+		<item id="x150.png" href="image/150.png" media-type="image/png" />
+		<item id="x156.png" href="image/156.png" media-type="image/png" />
+		<item id="x160.png" href="image/160.png" media-type="image/png" />
+		<item id="x162.png" href="image/162.png" media-type="image/png" />
+		<item id="x171.png" href="image/171.png" media-type="image/png" />
+		<item id="x176.png" href="image/176.png" media-type="image/png" />
+		<item id="x19.png" href="image/19.png" media-type="image/png" />
+		<item id="x197.png" href="image/197.png" media-type="image/png" />
+		<item id="x2.png" href="image/2.png" media-type="image/png" />
+		<item id="x203.png" href="image/203.png" media-type="image/png" />
+		<item id="x204.png" href="image/204.png" media-type="image/png" />
+		<item id="x472.png" href="image/472.png" media-type="image/png" />
+		<item id="x476.png" href="image/476.png" media-type="image/png" />
+		<item id="x66.png" href="image/66.png" media-type="image/png" />
+		<item id="x86.png" href="image/86.png" media-type="image/png" />
+		<item id="x90.png" href="image/90.png" media-type="image/png" />
+		<item id="P1-背景.jpg" href="image/P1-%E8%83%8C%E6%99%AF.jpg" media-type="image/jpeg" />
+		<item id="P10-孔子鸟.png" href="image/P10-%E5%AD%94%E5%AD%90%E9%B8%9F.png" media-type="image/png" />
+		<item id="P11-燕鸟.png" href="image/P11-%E7%87%95%E9%B8%9F.png" media-type="image/png" />
+		<item id="P11-燕鸟1.png" href="image/P11-%E7%87%95%E9%B8%9F1.png" media-type="image/png" />
+		<item id="P12-中华龙鸟.png" href="image/P12-%E4%B8%AD%E5%8D%8E%E9%BE%99%E9%B8%9F.png" media-type="image/png" />
+		<item id="P13-小盗龙.png" href="image/P13-%E5%B0%8F%E7%9B%97%E9%BE%99.png" media-type="image/png" />
+		<item id="P14-东北巨龙.png" href="image/P14-%E4%B8%9C%E5%8C%97%E5%B7%A8%E9%BE%99.png" media-type="image/png" />
+		<item id="P15-蟌蜓.png" href="image/P15-%E8%9F%8C%E8%9C%93.png" media-type="image/png" />
+		<item id="P15-蟌蜓1.png" href="image/P15-%E8%9F%8C%E8%9C%931.png" media-type="image/png" />
+		<item id="P16-始祖兽.png" href="image/P16-%E5%A7%8B%E7%A5%96%E5%85%BD.png" media-type="image/png" />
+		<item id="P17.png" href="image/P17.png" media-type="image/png" />
+		<item id="P18.png" href="image/P18.png" media-type="image/png" />
+		<item id="P19.png" href="image/P19.png" media-type="image/png" />
+		<item id="P2-背景.jpg" href="image/P2-%E8%83%8C%E6%99%AF.jpg" media-type="image/jpeg" />
+		<item id="P20.png" href="image/P20.png" media-type="image/png" />
+		<item id="P21.png" href="image/P21.png" media-type="image/png" />
+		<item id="P22.png" href="image/P22.png" media-type="image/png" />
+		<item id="P23.png" href="image/P23.png" media-type="image/png" />
+		<item id="P24.png" href="image/P24.png" media-type="image/png" />
+		<item id="P25.png" href="image/P25.png" media-type="image/png" />
+		<item id="P26.png" href="image/P26.png" media-type="image/png" />
+		<item id="P27.png" href="image/P27.png" media-type="image/png" />
+		<item id="P28.png" href="image/P28.png" media-type="image/png" />
+		<item id="P29.png" href="image/P29.png" media-type="image/png" />
+		<item id="P3-背景.jpg" href="image/P3-%E8%83%8C%E6%99%AF.jpg" media-type="image/jpeg" />
+		<item id="P30.png" href="image/P30.png" media-type="image/png" />
+		<item id="P31.png" href="image/P31.png" media-type="image/png" />
+		<item id="P32.png" href="image/P32.png" media-type="image/png" />
+		<item id="P33.png" href="image/P33.png" media-type="image/png" />
+		<item id="P34.png" href="image/P34.png" media-type="image/png" />
+		<item id="P4-近鸟龙.png" href="image/P4-%E8%BF%91%E9%B8%9F%E9%BE%99.png" media-type="image/png" />
+		<item id="P5-悟空翼龙.png" href="image/P5-%E6%82%9F%E7%A9%BA%E7%BF%BC%E9%BE%99.png" media-type="image/png" />
+		<item id="P5-悟空翼龙1.png" href="image/P5-%E6%82%9F%E7%A9%BA%E7%BF%BC%E9%BE%991.png" media-type="image/png" />
+		<item id="P5-悟空翼龙2.png" href="image/P5-%E6%82%9F%E7%A9%BA%E7%BF%BC%E9%BE%992.png" media-type="image/png" />
+		<item id="P6-天宇龙.png" href="image/P6-%E5%A4%A9%E5%AE%87%E9%BE%99.png" media-type="image/png" />
+		<item id="P7-耀龙.png" href="image/P7-%E8%80%80%E9%BE%99.png" media-type="image/png" />
+		<item id="P8-始祖鸟.png" href="image/P8-%E5%A7%8B%E7%A5%96%E9%B8%9F.png" media-type="image/png" />
+		<item id="P8-始祖鸟1.png" href="image/P8-%E5%A7%8B%E7%A5%96%E9%B8%9F1.png" media-type="image/png" />
+		<item id="P9-热河鸟.png" href="image/P9-%E7%83%AD%E6%B2%B3%E9%B8%9F.png" media-type="image/png" />
+		<item id="封面-阿.png" href="image/%E5%B0%81%E9%9D%A2-%E9%98%BF.png" media-type="image/png" />
+		<item id="版权-阿psd.png" href="image/%E7%89%88%E6%9D%83-%E9%98%BFpsd.png" media-type="image/png" />
+		<item id="结尾.png" href="image/%E7%BB%93%E5%B0%BE.png" media-type="image/png" />
+		<item id="结尾2.png" href="image/%E7%BB%93%E5%B0%BE2.png" media-type="image/png" />
+		<item id="结尾3.png" href="image/%E7%BB%93%E5%B0%BE3.png" media-type="image/png" />
+	</manifest>
+	<spine page-progression-direction="rtl">
+		<itemref idref="x1_ar-1" />
+		<itemref idref="x1_ar-2" />
+		<itemref idref="x1_ar-3" />
+		<itemref idref="x1_ar-4" />
+		<itemref idref="x1_ar-5" />
+		<itemref idref="x1_ar-6" />
+		<itemref idref="x1_ar-7" />
+		<itemref idref="x1_ar-8" />
+		<itemref idref="x1_ar-9" />
+		<itemref idref="x1_ar-10" />
+		<itemref idref="x1_ar-11" />
+		<itemref idref="x1_ar-12" />
+		<itemref idref="x1_ar-13" />
+		<itemref idref="x1_ar-14" />
+		<itemref idref="x1_ar-15" />
+		<itemref idref="x1_ar-16" />
+		<itemref idref="x1_ar-17" />
+		<itemref idref="x1_ar-18" />
+		<itemref idref="x1_ar-19" />
+		<itemref idref="x1_ar-20" />
+		<itemref idref="x1_ar-21" />
+		<itemref idref="x1_ar-22" />
+		<itemref idref="x1_ar-23" />
+		<itemref idref="x1_ar-24" />
+		<itemref idref="x1_ar-25" />
+		<itemref idref="x1_ar-26" />
+		<itemref idref="x1_ar-27" />
+		<itemref idref="x1_ar-28" />
+		<itemref idref="x1_ar-29" />
+		<itemref idref="x1_ar-30" />
+		<itemref idref="x1_ar-31" />
+		<itemref idref="x1_ar-32" />
+		<itemref idref="x1_ar-33" />
+		<itemref idref="x1_ar-34" />
+		<itemref idref="x1_ar-35" />
+		<itemref idref="x1_ar-36" />
+		<itemref idref="x1_ar-37" />
+		<itemref idref="x1_ar-38" />
+		<itemref idref="x1_ar-39" />
+		<itemref idref="x1_ar-40" />
+	</spine>
+</package>

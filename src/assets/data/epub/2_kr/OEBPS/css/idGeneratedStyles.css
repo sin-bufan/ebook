@@ -1,22 +1,4 @@
 @font-face {
-	font-family:"(誠)?簠萷";
-	font-style:normal;
-	font-weight:normal;
-	src : url("../font/(茄)技疙炼.TTF");
-}
-@font-face {
-	font-family:"(誠)锣??";
-	font-style:normal;
-	font-weight:normal;
-	src : url("../font/(茄)脚巩绊雕.TTF");
-}
-@font-face {
-	font-family:"Adobe Garamond Pro";
-	font-style:normal;
-	font-weight:normal;
-	src : url("../font/AGaramondPro-Regular.otf");
-}
-@font-face {
 	font-family:"Malgun Gothic";
 	font-style:normal;
 	font-weight:normal;
@@ -42,98 +24,98 @@ p.ParaOverride-1 {
 }
 span.CharOverride-1 {
 	color:#d0121b;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:1440px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-2 {
 	color:#000000;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:480px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-3 {
 	color:#000000;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:400px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-4 {
 	color:#b91c22;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:480px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-5 {
 	color:#000000;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:360px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-6 {
 	color:#000000;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:720px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-7 {
 	color:#000000;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:360px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-8 {
 	color:#b91c22;
-	font-family:"Adobe Garamond Pro", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:360px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-9 {
 	color:#000000;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:600px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-10 {
 	color:#b91c22;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:720px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-11 {
 	color:#b91c22;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:720px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-12 {
 	color:#000000;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:720px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-13 {
 	color:#b91c22;
-	font-family:"Adobe Garamond Pro", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:1200px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-14 {
 	color:#000000;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:1200px;
 	font-style:normal;
 	font-weight:normal;
@@ -141,14 +123,14 @@ span.CharOverride-14 {
 }
 span.CharOverride-15 {
 	color:#505050;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:360px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-16 {
 	color:#505050;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:400px;
 	font-style:normal;
 	font-weight:normal;
@@ -162,21 +144,21 @@ span.CharOverride-17 {
 }
 span.CharOverride-18 {
 	color:#787878;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:400px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-19 {
 	color:#ffffff;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:440px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-20 {
 	color:#ff0000;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:400px;
 	font-style:normal;
 	font-weight:normal;
@@ -190,21 +172,21 @@ span.CharOverride-21 {
 }
 span.CharOverride-22 {
 	color:#000000;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:440px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-23 {
 	color:#b39a60;
-	font-family:"(誠)锣??", sans-serif;
+	font-family:"Malgun Gothic", sans-serif;
 	font-size:480px;
 	font-style:normal;
 	font-weight:normal;
 }
 span.CharOverride-24 {
 	color:#ffffff;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:400px;
 	font-style:normal;
 	font-weight:normal;
@@ -218,7 +200,7 @@ span.CharOverride-25 {
 }
 span.CharOverride-26 {
 	color:#000000;
-	font-family:"(誠)?簠萷", serif;
+	font-family:"Malgun Gothic", serif;
 	font-size:400px;
 	font-style:normal;
 	font-weight:normal;

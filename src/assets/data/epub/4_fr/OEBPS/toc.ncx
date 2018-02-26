@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+	<head>
+		<meta name="dtb:uid" content="urn:uuid:692d72c1-0f7b-453b-967d-d24b4175928c" />
+		<meta name="dtb:depth" content="3" />
+		<meta name="dtb:totalPageCount" content="0" />
+		<meta name="dtb:maxPageNumber" content="0" />
+	</head>
+	<docTitle>
+		<text>4_fr</text>
+	</docTitle>
+	<navMap>
+		<navPoint id="navpoint1" playOrder="1"><navLabel><text>Préface</text></navLabel><content src="4_fr.xhtml#_idParaDest-1" /></navPoint>
+		<navPoint id="navpoint2" playOrder="2"><navLabel><text>Chapitre I.  Ressources en terres</text></navLabel><content src="4_fr.xhtml#_idParaDest-2" />
+			<navPoint id="navpoint3" playOrder="3"><navLabel><text>1. Situation actuelle de l’exploitation des ressources en terres </text></navLabel><content src="4_fr.xhtml#_idParaDest-3" /></navPoint>
+			<navPoint id="navpoint4" playOrder="4"><navLabel><text>2. Protection des terres arables</text></navLabel><content src="4_fr.xhtml#_idParaDest-4" /></navPoint>
+			<navPoint id="navpoint5" playOrder="5"><navLabel><text>3. Réalisation des travaux d’assainissement des terres </text></navLabel><content src="4_fr.xhtml#_idParaDest-5" /></navPoint>
+			<navPoint id="navpoint6" playOrder="6"><navLabel><text>4. Mise à disponibilité des terrains constructibles appartenant à l’Etat</text></navLabel><content src="4_fr.xhtml#_idParaDest-6" /></navPoint>
+			<navPoint id="navpoint7" playOrder="7"><navLabel><text>5. Exploitation des terres par un mode économe et intensif</text></navLabel><content src="4_fr.xhtml#_idParaDest-7" /></navPoint>
+			<navPoint id="navpoint8" playOrder="8"><navLabel><text>6. Marché foncier</text></navLabel><content src="4_fr.xhtml#_idParaDest-8" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint9" playOrder="9"><navLabel><text>Chapitre II.  Ressources minérales</text></navLabel><content src="4_fr.xhtml#_idParaDest-9" />
+			<navPoint id="navpoint10" playOrder="10"><navLabel><text>1. Situation actuelle des ressources minérales</text></navLabel><content src="4_fr.xhtml#_idParaDest-10" /></navPoint>
+			<navPoint id="navpoint11" playOrder="11"><navLabel><text>2. Exploration minière</text></navLabel><content src="4_fr.xhtml#_idParaDest-11" /></navPoint>
+			<navPoint id="navpoint12" playOrder="12"><navLabel><text>3. Exploitation des ressources minérales</text></navLabel><content src="4_fr.xhtml#_idParaDest-12" /></navPoint>
+			<navPoint id="navpoint13" playOrder="13"><navLabel><text> 4. Droit d’utilisation des ressources minérales et sa cession</text></navLabel><content src="4_fr.xhtml#_idParaDest-13" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint14" playOrder="14"><navLabel><text>Chapitre III. Ressources océaniques</text></navLabel><content src="4_fr.xhtml#_idParaDest-14" />
+			<navPoint id="navpoint15" playOrder="15"><navLabel><text>1. Situation économique des ressources océaniques</text></navLabel><content src="4_fr.xhtml#_idParaDest-15" /></navPoint>
+			<navPoint id="navpoint16" playOrder="16"><navLabel><text> 2. Exploitation des ressources océaniques</text></navLabel><content src="4_fr.xhtml#_idParaDest-16" /></navPoint>
+			<navPoint id="navpoint17" playOrder="17"><navLabel><text>3. Environnement océanique</text></navLabel><content src="4_fr.xhtml#_idParaDest-17" /></navPoint>
+			<navPoint id="navpoint18" playOrder="18"><navLabel><text>4. Souveraineté océanique</text></navLabel><content src="4_fr.xhtml#_idParaDest-18" /></navPoint>
+			<navPoint id="navpoint19" playOrder="19"><navLabel><text>5. Gestion des ressources océaniques</text></navLabel><content src="4_fr.xhtml#_idParaDest-19" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint20" playOrder="20"><navLabel><text>Chapitre IV.   Réglementations et politiques concernant la gestion des ressources territoriales</text></navLabel><content src="4_fr.xhtml#_idParaDest-20" />
+			<navPoint id="navpoint21" playOrder="21"><navLabel><text>1. Perfectionnement du système de lois liées aux ressources territoriales</text></navLabel><content src="4_fr.xhtml#_idParaDest-21" /></navPoint>
+			<navPoint id="navpoint22" playOrder="22"><navLabel><text>2. Réformes dans le secteur des ressources territoriales</text></navLabel><content src="4_fr.xhtml#_idParaDest-22" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint23" playOrder="23"><navLabel><text>Chapitre V. Investigations géologiques et services liés aux informations géologiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-23" />
+			<navPoint id="navpoint24" playOrder="24"><navLabel><text>1. Investigations géologiques générales </text></navLabel><content src="4_fr.xhtml#_idParaDest-24" /></navPoint>
+			<navPoint id="navpoint25" playOrder="25"><navLabel><text>(3) Investigations géologiques sur les ressources minérales</text></navLabel><content src="4_fr.xhtml#_idParaDest-25" /></navPoint>
+			<navPoint id="navpoint26" playOrder="26"><navLabel><text>2. Evaluations suite aux investigations géologiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-26" /></navPoint>
+			<navPoint id="navpoint27" playOrder="27"><navLabel><text>3. Investigations géologiques dans l’océan</text></navLabel><content src="4_fr.xhtml#_idParaDest-27" /></navPoint>
+			<navPoint id="navpoint28" playOrder="28"><navLabel><text>4. Services liés aux informations géologiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-28" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint29" playOrder="29"><navLabel><text>Chapitre VI. Protection de l’environnement géologique et préventions contre les désastres géologiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-29" />
+			<navPoint id="navpoint30" playOrder="30"><navLabel><text>1. Restauration et assainissement de l’environnement géologique des mines   </text></navLabel><content src="4_fr.xhtml#_idParaDest-30" /></navPoint>
+			<navPoint id="navpoint31" playOrder="31"><navLabel><text>2. Désastres géologiques et mesures préventives</text></navLabel><content src="4_fr.xhtml#_idParaDest-31" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint32" playOrder="32"><navLabel><text>Chapitre VII. Coopérations technologiques à l’échelle internationale</text></navLabel><content src="4_fr.xhtml#_idParaDest-32" />
+			<navPoint id="navpoint33" playOrder="33"><navLabel><text>1. Avancées significatives dans les technologies liées aux ressources territoriales</text></navLabel><content src="4_fr.xhtml#_idParaDest-33" /></navPoint>
+			<navPoint id="navpoint34" playOrder="34"><navLabel><text>2. Projets technologiques et résultats</text></navLabel><content src="4_fr.xhtml#_idParaDest-34" /></navPoint>
+			<navPoint id="navpoint35" playOrder="35"><navLabel><text>3. Coopérations internationales</text></navLabel><content src="4_fr.xhtml#_idParaDest-35" /></navPoint>
+			<navPoint id="navpoint36" playOrder="36"><navLabel><text>4. Informatisation du secteur des ressources territoriales</text></navLabel><content src="4_fr.xhtml#_idParaDest-36" /></navPoint>
+		</navPoint>
+		<navPoint id="navpoint37" playOrder="37"><navLabel><text>Chapitre VIII. Informations cartographiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-37" />
+			<navPoint id="navpoint38" playOrder="38"><navLabel><text>1. Elaboration des lois relatives aux informations cartographiques et mise en place du contrôle et de la surveillance</text></navLabel><content src="4_fr.xhtml#_idParaDest-38" /></navPoint>
+			<navPoint id="navpoint39" playOrder="39"><navLabel><text>2. Le premier recensement national des ressources géographiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-39" /></navPoint>
+			<navPoint id="navpoint40" playOrder="40"><navLabel><text>3. Développement des activités liées aux informations géographiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-40" /></navPoint>
+			<navPoint id="navpoint41" playOrder="41"><navLabel><text>4. Développement des ressources informationnelles cartographiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-41" /></navPoint>
+			<navPoint id="navpoint42" playOrder="42"><navLabel><text>5. Service public lié aux ressources informationnelles cartographiques</text></navLabel><content src="4_fr.xhtml#_idParaDest-42" /></navPoint>
+		</navPoint>
+	</navMap>
+</ncx>
